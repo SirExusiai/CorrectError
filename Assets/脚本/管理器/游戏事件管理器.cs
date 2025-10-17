@@ -38,6 +38,32 @@ public class GameEventManager : MonoBehaviour
     // 當一個新場景載入完成後，這個函式會被自動呼叫
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        // 首先，在新場景中尋找場景資訊
+        SceneInfo sceneInfo = FindObjectOfType<SceneInfo>();
+
+        // 獲取玩家物件的引用
+        GameObject playerObject = null;
+        if (PlayerPersistence.instance != null)
+        {
+            playerObject = PlayerPersistence.instance.gameObject;
+        }
+
+        if (playerObject == null) return; // 如果找不到玩家，就直接返回
+
+        // 根據場景資訊來決定是否啟用玩家
+        if (sceneInfo != null && !sceneInfo.hasPlayer)
+        {
+            // 如果場景資訊說「沒有玩家」，就禁用玩家物件
+            playerObject.SetActive(false);
+            Debug.Log("進入無玩家場景，已禁用玩家。");
+            return; // 結束後續處理
+        }
+    
+        // --- 如果程式碼執行到這裡，代表這是一個需要玩家的場景 ---
+
+        // 確保玩家是啟用的
+        playerObject.SetActive(true);
+        Debug.Log("進入玩家場景，已啟用玩家。");
         if (!string.IsNullOrEmpty(nextEntryPointName))
         {
             // 在新場景中尋找所有 EntryPoint
