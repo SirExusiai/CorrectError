@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -13,8 +14,9 @@ public class DialogueManager : MonoBehaviour
     public Image avatarImage;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
+    public static event Action OnDialogueEnd; // 對話結束時觸發的事件
 
-    // 儲存對話數據的佇列 (Queue)
+    // 儲存對話數據的佇列 (Queue) 
     private Queue<DialogueLine> dialogueQueue;
 
     // 玩家的引用，用來鎖定/解鎖移動
@@ -55,6 +57,17 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    // 在 DialogueManager.cs 中加入這個函式
+
+    private void OnDestroy()
+    {
+        // 當這個物件被銷毀時，檢查 instance 是否還指向自己
+        if (instance == this)
+        {
+            // 如果是，就將 instance 清空，這樣下一個場景的 DialogueManager 才能正常初始化
+            instance = null;
+        }
+    }
     public void StartDialogue(DialogueData dialogue)
     {
         isDialogueActive = true;
@@ -115,5 +128,6 @@ public class DialogueManager : MonoBehaviour
         // 解鎖玩家操作
         if (playerMovement != null) playerMovement.SetCanMove(true);
         if (playerInteraction != null) playerInteraction.enabled = true;
+        OnDialogueEnd?.Invoke();
     }
 }
