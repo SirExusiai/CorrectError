@@ -16,4 +16,5 @@ public class InteractableNote : MonoBehaviour, IInteractable
             GameEventManager.instance.SetFlag(flagToSetOnInteract, true);
         }// 如果旗標名稱不為空，就在互動後設定它
     }
+    
 }
