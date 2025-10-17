@@ -2,30 +2,54 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target; // 要跟隨的目標 (玩家)
-    public float smoothSpeed = 0.125f; // 攝影機跟隨的平滑度
-    public Vector3 offset; // 攝影機與目標的偏移量
+    // 我們不再需要從 Inspector 中手動設定 target，所以可以將它設為 private
+    private Transform target;
 
-    // 可以在這裡設定場景的邊界
+    public float smoothSpeed = 0.125f;
+    public Vector3 offset;
     public float minX;
     public float maxX;
 
+    // 我們使用 Start() 函式，它在物件第一次被啟用時執行
+    void Start()
+    {
+        // 嘗試自動尋找玩家
+        FindPlayer();
+    }
+
     void LateUpdate()
     {
-        if (target == null) return;
+        // 如果 target 仍然是 null (例如在主選單等沒有玩家的場景)，就直接返回
+        if (target == null)
+        {
+            // 我們可以再次嘗試尋找，以應對玩家稍後才出現的情況
+            FindPlayer();
+            if (target == null) return;
+        }
 
-        // 計算目標位置
         Vector3 desiredPosition = target.position + offset;
-        // 使用 Lerp 達成平滑跟隨
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
 
-        // 將攝影機的 Y 和 Z 軸鎖定，只跟隨 X 軸
         smoothedPosition.y = transform.position.y;
         smoothedPosition.z = transform.position.z;
 
-        // 套用邊界限制
         smoothedPosition.x = Mathf.Clamp(smoothedPosition.x, minX, maxX);
 
         transform.position = smoothedPosition;
+    }
+
+    // 這是一個新的函式，專門用來尋找玩家
+    private void FindPlayer()
+    {
+        // 透過我們建立的 PlayerPersistence 單例來安全地找到玩家
+        if (PlayerPersistence.instance != null)
+        {
+            target = PlayerPersistence.instance.transform;
+            Debug.Log("攝影機已自動鎖定目標: " + target.name);
+        }
+        else
+        {
+            Debug.LogWarning("攝影機在場景中找不到玩家的 PlayerPersistence 實例。");
+        }
     }
 }

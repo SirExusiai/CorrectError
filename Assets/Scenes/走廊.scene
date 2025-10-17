@@ -788,11 +788,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5563cd2175027b742ad55e8303585b9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   smoothSpeed: 0.125
   offset: {x: 0, y: 0, z: 0}
   minX: 0
-  maxX: 0
+  maxX: 54
 --- !u!1 &2097577102
 GameObject:
   m_ObjectHideFlags: 0
