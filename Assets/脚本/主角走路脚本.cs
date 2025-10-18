@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
         // 更新 Animator 中的 IsMoving 參數
         bool isMoving = movement.x != 0;
-        animator.SetBool("IsMoving", isMoving);
+        animator.SetBool("IsMoving", isMoving); 
     }
 
     void FixedUpdate()
@@ -45,13 +45,13 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
-    public void SetCanMove(bool status)
+    public void SetCanMove(bool status) 
     {
         canMove = status;
         if (!status)
         {
             rb.velocity = Vector2.zero;
-            animator.SetBool("IsMoving", false); // 禁用移動時，確保動畫停止
+            animator.SetBool("IsMoving", false); // 禁用移動時，確保動畫停止 
         }
     }
 }
