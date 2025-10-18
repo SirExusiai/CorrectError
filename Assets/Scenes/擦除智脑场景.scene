@@ -587,7 +587,8 @@ MonoBehaviour:
   maskRenderTexture: {fileID: 8400000, guid: 9f69b5d87ea4c3e428a6aa9ae8811a4d, type: 2}
   brushTexture: {fileID: 2800000, guid: c005ec5ab139b544faa39d02465420cc, type: 3}
   brushSize: 50
-  completionThreshold: 0.9
+  completionThreshold: 0.5
+  gridResolution: 32
 --- !u!114 &285069044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -634,6 +635,7 @@ GameObject:
   - component: {fileID: 360689634}
   - component: {fileID: 360689636}
   - component: {fileID: 360689635}
+  - component: {fileID: 360689637}
   m_Layer: 5
   m_HasEditorInfo: 1
   m_Name: "\u5BF9\u8BDDPanel"
@@ -702,6 +704,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360689633}
   m_CullTransparentMesh: 1
+--- !u!114 &360689637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360689633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532699955d75d4e4aba592b246e9a228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 360689633}
+  avatarImage: {fileID: 1243012718}
+  nameText: {fileID: 1402199196}
+  dialogueText: {fileID: 1011714292}
 --- !u!1 &374557035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,10 +1175,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   completionDialogue: {fileID: 11400000, guid: f36a2ca68d72dcc4f90c1821dde24f7f, type: 2}
-  sceneToReturnTo: "\u529E\u516C\u5BA4"
-  entryPointInReturnScene: 
   eraserPuzzlePanel: {fileID: 180281546}
   completedSprite: {fileID: 21300000, guid: 5188fc4ad6552254588594225bff55c9, type: 3}
+  sceneToReturnTo: "\u529E\u516C\u5BA41"
+  entryPointInReturnScene: "\u4ECE\u667A\u8111\u8FD4\u56DE"
 --- !u!61 &460341231
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2152,55 +2170,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1232497188
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 7
-  m_Component:
-  - component: {fileID: 1232497189}
-  - component: {fileID: 1232497190}
-  m_Layer: 0
-  m_HasEditorInfo: 1
-  m_Name: "\u5BF9\u8BDD\u7BA1\u7406\u5668"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1232497189
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1232497188}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.27901486, y: 0.41248506, z: -0.06517403}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1232497190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1232497188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdf81a6420a4b624b94b4ed4bcb411a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 360689633}
-  avatarImage: {fileID: 1243012718}
-  nameText: {fileID: 1402199196}
-  dialogueText: {fileID: 1011714292}
 --- !u!1 &1243012716
 GameObject:
   m_ObjectHideFlags: 0
@@ -3107,7 +3076,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1215315351}
-  - {fileID: 1232497189}
   - {fileID: 1269648304}
   - {fileID: 383130926}
   - {fileID: 1115200025}

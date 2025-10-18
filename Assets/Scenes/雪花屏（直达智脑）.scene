@@ -204,6 +204,7 @@ GameObject:
   - component: {fileID: 148984066}
   - component: {fileID: 148984068}
   - component: {fileID: 148984067}
+  - component: {fileID: 148984069}
   m_Layer: 5
   m_HasEditorInfo: 1
   m_Name: "\u5BF9\u8BDDPanel"
@@ -272,6 +273,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148984065}
   m_CullTransparentMesh: 1
+--- !u!114 &148984069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148984065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532699955d75d4e4aba592b246e9a228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 148984065}
+  avatarImage: {fileID: 2081516308}
+  nameText: {fileID: 1974510647}
+  dialogueText: {fileID: 1096994203}
 --- !u!1 &467539712
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,6 +760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologue: {fileID: 11400000, guid: fdda371e13651fc439636f995cbd9736, type: 2}
   nextSceneName: "\u64E6\u9664\u667A\u8111\u573A\u666F"
+  entryPointNameInNextScene: 
   flashPanelCanvasGroup: {fileID: 467539714}
   flashDuration: 0.2
 --- !u!1 &1834005636
@@ -775,10 +793,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdf81a6420a4b624b94b4ed4bcb411a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 148984065}
-  avatarImage: {fileID: 2081516308}
-  nameText: {fileID: 1974510647}
-  dialogueText: {fileID: 1096994203}
 --- !u!4 &1834005638
 Transform:
   m_ObjectHideFlags: 0
