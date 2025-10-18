@@ -354,7 +354,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed0a7918429e4e439e0c1c6860524ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wrongDialogue: {fileID: 11400000, guid: 15821a1c2d17efe449a73886f13ae2a4, type: 2}
+  targetFlowchart: {fileID: 2138045769}
+  targetBlockName: "\u9519\u8BEF\u7269\u4F53Hint"
 --- !u!61 &261056712
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -635,7 +636,6 @@ GameObject:
   - component: {fileID: 360689634}
   - component: {fileID: 360689636}
   - component: {fileID: 360689635}
-  - component: {fileID: 360689637}
   m_Layer: 5
   m_HasEditorInfo: 1
   m_Name: "\u5BF9\u8BDDPanel"
@@ -704,22 +704,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360689633}
   m_CullTransparentMesh: 1
---- !u!114 &360689637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360689633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 532699955d75d4e4aba592b246e9a228, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 360689633}
-  avatarImage: {fileID: 1243012718}
-  nameText: {fileID: 1402199196}
-  dialogueText: {fileID: 1011714292}
 --- !u!1 &374557035
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,7 +807,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed0a7918429e4e439e0c1c6860524ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wrongDialogue: {fileID: 11400000, guid: 15821a1c2d17efe449a73886f13ae2a4, type: 2}
+  targetFlowchart: {fileID: 2138045769}
+  targetBlockName: "\u9519\u8BEF\u7269\u4F53Hint"
 --- !u!61 &374557039
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1174,9 +1159,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd0ea82ca6ea3d747b591e1b5568dbac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  completionDialogue: {fileID: 11400000, guid: f36a2ca68d72dcc4f90c1821dde24f7f, type: 2}
   eraserPuzzlePanel: {fileID: 180281546}
   completedSprite: {fileID: 21300000, guid: 5188fc4ad6552254588594225bff55c9, type: 3}
+  targetFlowchart: {fileID: 2138045769}
+  puzzleCompleteBlockName: "\u6CBB\u7597\u5B8C\u6210"
   sceneToReturnTo: "\u529E\u516C\u5BA41"
   entryPointInReturnScene: "\u4ECE\u667A\u8111\u8FD4\u56DE"
 --- !u!61 &460341231
@@ -1327,7 +1313,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed0a7918429e4e439e0c1c6860524ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wrongDialogue: {fileID: 11400000, guid: 15821a1c2d17efe449a73886f13ae2a4, type: 2}
+  targetFlowchart: {fileID: 2138045769}
+  targetBlockName: "\u9519\u8BEF\u7269\u4F53Hint"
 --- !u!61 &520512278
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1655,7 +1642,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed0a7918429e4e439e0c1c6860524ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wrongDialogue: {fileID: 11400000, guid: 15821a1c2d17efe449a73886f13ae2a4, type: 2}
+  targetFlowchart: {fileID: 2138045769}
+  targetBlockName: "\u9519\u8BEF\u7269\u4F53Hint"
 --- !u!61 &987870170
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2029,7 +2017,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed0a7918429e4e439e0c1c6860524ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wrongDialogue: {fileID: 11400000, guid: 15821a1c2d17efe449a73886f13ae2a4, type: 2}
+  targetFlowchart: {fileID: 2138045769}
+  targetBlockName: "\u9519\u8BEF\u7269\u4F53Hint"
 --- !u!61 &1193309632
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2454,7 +2443,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed0a7918429e4e439e0c1c6860524ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wrongDialogue: {fileID: 11400000, guid: 15821a1c2d17efe449a73886f13ae2a4, type: 2}
+  targetFlowchart: {fileID: 2138045769}
+  targetBlockName: "\u9519\u8BEF\u7269\u4F53Hint"
 --- !u!61 &1323056005
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2736,7 +2726,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed0a7918429e4e439e0c1c6860524ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wrongDialogue: {fileID: 11400000, guid: 15821a1c2d17efe449a73886f13ae2a4, type: 2}
+  targetFlowchart: {fileID: 2138045769}
+  targetBlockName: "\u9519\u8BEF\u7269\u4F53Hint"
 --- !u!61 &1385845644
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3071,6 +3062,254 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825359835}
   m_CullTransparentMesh: 1
+--- !u!1 &2067580188
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 7
+  m_Component:
+  - component: {fileID: 2067580190}
+  - component: {fileID: 2067580189}
+  m_Layer: 0
+  m_HasEditorInfo: 1
+  m_Name: _FungusState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2067580189
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067580188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedFlowchart: {fileID: 2138045769}
+--- !u!4 &2067580190
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067580188}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2138045768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 7
+  m_Component:
+  - component: {fileID: 2138045773}
+  - component: {fileID: 2138045769}
+  - component: {fileID: 2138045771}
+  - component: {fileID: 2138045770}
+  - component: {fileID: 2138045775}
+  - component: {fileID: 2138045776}
+  - component: {fileID: 2138045777}
+  m_Layer: 0
+  m_HasEditorInfo: 1
+  m_Name: "\u8BE5\u573A\u666F\u5BF9\u8BDD\u9762\u677F"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2138045769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138045768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  scrollPos: {x: 37.000008, y: 186.16669}
+  variablesScrollPos: {x: 0, y: 0}
+  variablesExpanded: 1
+  blockViewHeight: 400
+  zoom: 1
+  scrollViewRect:
+    serializedVersion: 2
+    x: -343
+    y: -340
+    width: 1114
+    height: 859
+  selectedBlocks:
+  - {fileID: 2138045771}
+  selectedCommands: []
+  variables: []
+  description: 
+  stepPause: 0
+  colorCommands: 1
+  hideComponents: 1
+  saveSelection: 1
+  localizationId: 
+  showLineNumbers: 0
+  hideCommands: []
+  luaEnvironment: {fileID: 0}
+  luaBindingName: flowchart
+--- !u!114 &2138045770
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138045768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1
+  indentLevel: 0
+  storyText: "\u4E0D\u662F\u8FD9\u4E2A"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &2138045771
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138045768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 67.66667
+    y: 70.66669
+    width: 122
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 0
+  blockName: "\u9519\u8BEF\u7269\u4F53Hint"
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 2138045770}
+  suppressAllAutoSelections: 0
+--- !u!4 &2138045773
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138045768}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2138045775
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138045768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 89
+    y: -42.833344
+    width: 98
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 2
+  blockName: "\u6CBB\u7597\u5B8C\u6210"
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 2138045776}
+  - {fileID: 2138045777}
+  suppressAllAutoSelections: 0
+--- !u!114 &2138045776
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138045768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 3
+  indentLevel: 0
+  storyText: "\u5DF2\u7ECF\u4E0D\u7528\u518D\u6218\u6597\u4E86"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &2138045777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138045768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 4
+  indentLevel: 0
+  targetObject: {fileID: 460341227}
+  methodName: ReturnToPreviousScene
+  delay: 0.2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3089,3 +3328,5 @@ SceneRoots:
   - {fileID: 520512276}
   - {fileID: 261056710}
   - {fileID: 221873428}
+  - {fileID: 2138045773}
+  - {fileID: 2067580190}

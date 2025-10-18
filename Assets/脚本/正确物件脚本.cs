@@ -1,97 +1,78 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-using System.Collections;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class CorrectObject : MonoBehaviour
 {
     [Header("謎題完成後設定")]
-    public DialogueData completionDialogue;    // 謎題完成後觸發的對話
-    public GameObject eraserPuzzlePanel;       // 橡皮擦 UI 面板
-    public Sprite completedSprite;             // 完成後物件要顯示的新圖案
+    public GameObject eraserPuzzlePanel;
+    public Sprite completedSprite;
+
+    [Header("Fungus 設定")]
+    public Fungus.Flowchart targetFlowchart;
+    public string puzzleCompleteBlockName;
 
     [Header("返回場景設定")]
-    public string sceneToReturnTo;           // 要返回的場景名稱
-    public string entryPointInReturnScene;     // 返回場景後的入口點名稱
+    public string sceneToReturnTo;
+    public string entryPointInReturnScene;
 
     private bool hasBeenActivated = false;
     private SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
-        // 在 Awake 中獲取 SpriteRenderer 元件
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    private void OnEnable()
-    {
-        EraserController.OnEraseCompleted += HandleEraseCompleted;
-    }
-
-    private void OnDisable()
-    {
-        EraserController.OnEraseCompleted -= HandleEraseCompleted;
-    }
-
+    // OnMouseDown 的邏輯保持不變，只是觸發的目標變了
     private void OnMouseDown()
     {
         if (EventSystem.current.IsPointerOverGameObject()) return;
         if (hasBeenActivated) return;
         
-        if (ToolbarManager.instance == null)
+        if (ToolbarManager.instance != null)
         {
-            Debug.LogError("場景中找不到 ToolbarManager！");
-            return;
+            hasBeenActivated = true;
+            ToolbarManager.instance.ShowToolbar();
         }
-        
-        hasBeenActivated = true;
-        ToolbarManager.instance.ShowToolbar();
     }
+
+    // 這個函式由 EraserController 的完成事件觸發
+    private void OnEnable() { EraserController.OnEraseCompleted += HandleEraseCompleted; }
+    private void OnDisable() { EraserController.OnEraseCompleted -= HandleEraseCompleted; }
 
     private void HandleEraseCompleted()
     {
-        EraserController.OnEraseCompleted -= HandleEraseCompleted;
+        // 1. 處理 UI 和物件外觀
+        if (eraserPuzzlePanel != null) eraserPuzzlePanel.SetActive(false);
+        if (spriteRenderer != null && completedSprite != null) spriteRenderer.sprite = completedSprite;
         
-        // 1. 隱藏 UI, 更換圖案
-        if (eraserPuzzlePanel != null)
+        // 2. 觸發 Fungus 對話
+        if (targetFlowchart != null && !string.IsNullOrEmpty(puzzleCompleteBlockName))
         {
-            eraserPuzzlePanel.SetActive(false);
-        }
-        if (spriteRenderer != null && completedSprite != null)
-        {
-            spriteRenderer.sprite = completedSprite;
-        }
-
-        // 2. 訂閱對話結束事件，準備跳轉
-        DialogueManager.OnDialogueEnd += PrepareToReturnToScene;
-        
-        // 3. 觸發對話
-        if (completionDialogue != null && DialogueManager.instance != null)
-        {
-            DialogueManager.instance.StartDialogue(completionDialogue);
-        }
-        else
-        {
-            // 如果沒有對話，也直接準備跳轉
-            PrepareToReturnToScene();
+            targetFlowchart.ExecuteBlock(puzzleCompleteBlockName);
         }
     }
 
-    // 【修改】這個函式現在只負責啟動協程
-    private void PrepareToReturnToScene()
+    // 【新增】這個函式將由 Fungus 的 Call Method 指令來呼叫
+    public void ReturnToPreviousScene()
     {
-        DialogueManager.OnDialogueEnd -= PrepareToReturnToScene;
-        // 啟動一個帶有延遲的場景跳轉協程
+        // 【偵錯日誌】檢查此函式是否被成功呼叫
+        Debug.Log("<color=green>Fungus 成功呼叫 ReturnToPreviousScene()！</color> 準備返回場景...");
         StartCoroutine(ReturnToSceneCoroutine());
     }
 
-    // 【新增】帶有延遲的場景跳轉協程
     private IEnumerator ReturnToSceneCoroutine()
     {
-        // 等待 0.2 秒。這個緩衝時間給了編輯器足夠的時間來穩定
-        yield return new WaitForSeconds(0.2f);
+        // 檢查場景名稱是否為空
+        if (string.IsNullOrEmpty(sceneToReturnTo))
+        {
+            Debug.LogError("錯誤：要返回的場景名稱為空！請在 Inspector 中設定。");
+            yield break; // 終止協程
+        }
 
-        Debug.Log("安全緩衝結束，正在返回場景: " + sceneToReturnTo);
+        yield return new WaitForSeconds(0.2f);
         if (GameEventManager.instance != null)
         {
             GameEventManager.nextEntryPointName = entryPointInReturnScene;
@@ -99,4 +80,3 @@ public class CorrectObject : MonoBehaviour
         SceneManager.LoadScene(sceneToReturnTo);
     }
 }
-

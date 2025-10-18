@@ -1,29 +1,31 @@
 using UnityEngine;
-using UnityEngine.EventSystems; // 【新增】引用 UI 事件系統
+using UnityEngine.EventSystems;
 
 public class WrongObject : MonoBehaviour
 {
-    public DialogueData wrongDialogue;
+    [Header("Fungus 設定")]
+    [Tooltip("要觸發的 Fungus Flowchart 物件")]
+    public Fungus.Flowchart targetFlowchart;
 
-    // 當滑鼠點擊到這個物件的碰撞體時，這個函式會被自動呼叫
+    [Tooltip("要執行的 Block 的名稱")]
+    public string targetBlockName;
+
     private void OnMouseDown()
     {
-        Debug.Log("嘗試點擊 " + gameObject.name);
-        // 【新增】檢查滑鼠指標是否在任何 UI 元件之上
         if (EventSystem.current.IsPointerOverGameObject())
         {
-            // 如果是，就立刻停止執行，不觸發後續的互動
             return;
         }
 
-        // --- 只有當滑鼠沒有點擊到 UI 時，才會執行到這裡 ---
-        if (wrongDialogue != null && DialogueManager.instance != null)
+        // 檢查 Flowchart 和 Block 名稱是否已設定
+        if (targetFlowchart != null && !string.IsNullOrEmpty(targetBlockName))
         {
-            DialogueManager.instance.StartDialogue(wrongDialogue);
+            // 執行指定的 Block
+            targetFlowchart.ExecuteBlock(targetBlockName);
         }
         else
         {
-            Debug.Log("這個物件沒有什麼特別的。");
+            Debug.LogWarning("此物件未指定要執行的 Fungus Flowchart 或 Block 名稱。");
         }
     }
 }
