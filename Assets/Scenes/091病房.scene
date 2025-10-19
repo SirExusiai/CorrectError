@@ -1072,6 +1072,7 @@ GameObject:
   - component: {fileID: 1762197381}
   - component: {fileID: 1762197379}
   - component: {fileID: 1762197380}
+  - component: {fileID: 1762197385}
   - component: {fileID: 1762197384}
   m_Layer: 0
   m_HasEditorInfo: 1
@@ -2265,6 +2266,7 @@ MonoBehaviour:
   - {fileID: 1762197374}
   - {fileID: 1762197373}
   - {fileID: 1762197384}
+  - {fileID: 1762197385}
   - {fileID: 1762197372}
   suppressAllAutoSelections: 0
 --- !u!114 &1762197379
@@ -2870,21 +2872,43 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1762197384
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762197356}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 75
+  indentLevel: 1
+  duration: 1
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  fadeTweenType: 4
+--- !u!114 &1762197385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762197356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 74
   indentLevel: 1
-  targetObject: {fileID: 1759814792}
-  methodName: TryTeleport
-  delay: 0.5
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: "\u96EA\u82B1\u5C4F\uFF08DAY1_091\uFF09"
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!1001 &1922067675
 PrefabInstance:
   m_ObjectHideFlags: 0
