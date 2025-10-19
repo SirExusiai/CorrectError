@@ -181,11 +181,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 38.52054, y: -518.5591}
+  scrollPos: {x: 35.037254, y: -472.37918}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 621.3334
-  zoom: 1
+  zoom: 0.85000014
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -280,7 +280,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 107.70759
     y: 645.4916
-    width: 165.33334
+    width: 163.52939
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -808,7 +808,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 106.07706
     y: 684.31055
-    width: 198
+    width: 194.70586
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -862,7 +862,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 107.00098
     y: 606.9591
-    width: 177.33334
+    width: 175.2941
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -889,7 +889,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 109.88158
     y: 724.4046
-    width: 198
+    width: 194.70586
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1298,7 +1298,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 112.07326
     y: 564.3099
-    width: 150.66666
+    width: 148.82352
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1342,7 +1342,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 129.47946
     y: 889.3098
-    width: 153.33334
+    width: 151.76468
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1420,7 +1420,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 145.66699
     y: 855.71606
-    width: 174.66666
+    width: 171.76468
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1447,7 +1447,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 141.76076
     y: 811.96606
-    width: 174.66666
+    width: 171.76468
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1474,7 +1474,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 136.29202
     y: 772.9036
-    width: 165.33334
+    width: 163.52939
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1641,7 +1641,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 954127053514218876, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 8.722845
+      value: 2.7581635
       objectReference: {fileID: 0}
     - target: {fileID: 954127053514218876, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
       propertyPath: m_LocalScale.y
@@ -1649,11 +1649,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 954127053514218876, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 68.43
+      value: 76.17
       objectReference: {fileID: 0}
     - target: {fileID: 954127053514218876, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3073
+      value: 0.39
       objectReference: {fileID: 0}
     - target: {fileID: 954127053514218876, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1693,7 +1693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542024871768552698, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
       propertyPath: targetBlockName
-      value: "DAY1\u4E0E\u75C5\u623F\u7A97\u6237\u4EA4\u4E92 (012)"
+      value: "DAY1\u4E0E\u75C5\u623F\u7A97\u6237\u4EA4\u4E92 (091)"
       objectReference: {fileID: 0}
     - target: {fileID: 3542024871768552698, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
       propertyPath: targetFlowchart
@@ -2469,8 +2469,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2353453705784465036, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 674384035}
   m_SourcePrefab: {fileID: 100100000, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
+--- !u!1 &674384034 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2353453705784465036, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
+  m_PrefabInstance: {fileID: 674384033}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &674384035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674384034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d09b585c777741d4290b683722523cc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetFlowchart: {fileID: 86450040}
+  targetBlockName: "DAY1\u4E0E\u75C5\u623F\u7A97\u6237\u4EA4\u4E92"
+  triggerOnce: 1
 --- !u!1 &809329094
 GameObject:
   m_ObjectHideFlags: 0
@@ -2707,8 +2730,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2353453705784465036, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1077385228}
   m_SourcePrefab: {fileID: 100100000, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
+--- !u!1 &1077385227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2353453705784465036, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
+  m_PrefabInstance: {fileID: 1077385226}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1077385228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077385227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d09b585c777741d4290b683722523cc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetFlowchart: {fileID: 86450040}
+  targetBlockName: "DAY1\u4E0E\u75C5\u623F\u7A97\u6237\u4EA4\u4E92"
+  triggerOnce: 1
 --- !u!1 &1215151095
 GameObject:
   m_ObjectHideFlags: 0
@@ -3143,7 +3189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetFlowchart: {fileID: 86450040}
-  targetBlockName: "DAY1\u4E0E\u75C5\u623F\u7A97\u6237\u4EA4\u4E92 (012)"
+  targetBlockName: "DAY1\u4E0E\u75C5\u623F\u7A97\u6237\u4EA4\u4E92 (091)"
   triggerOnce: 1
 --- !u!1 &1710918741
 GameObject:
@@ -3274,7 +3320,7 @@ Transform:
   m_GameObject: {fileID: 1741688205}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 83.69, y: 0.23, z: 0}
+  m_LocalPosition: {x: 83.65, y: 0.23, z: 0}
   m_LocalScale: {x: 0.6519043, y: 0.6307769, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3351,8 +3397,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2353453705784465036, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1932359666}
   m_SourcePrefab: {fileID: 100100000, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
+--- !u!1 &1932359665 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2353453705784465036, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
+  m_PrefabInstance: {fileID: 1932359664}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1932359666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932359665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d09b585c777741d4290b683722523cc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetFlowchart: {fileID: 86450040}
+  targetBlockName: "DAY1\u4E0E\u75C5\u623F\u7A97\u6237\u4EA4\u4E92"
+  triggerOnce: 1
 --- !u!1 &1959389850
 GameObject:
   m_ObjectHideFlags: 0
@@ -3517,11 +3586,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 954127053514218876, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 86.46
+      value: 68.36
       objectReference: {fileID: 0}
     - target: {fileID: 954127053514218876, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2684
+      value: 0.27
       objectReference: {fileID: 0}
     - target: {fileID: 954127053514218876, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3561,7 +3630,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542024871768552698, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
       propertyPath: targetBlockName
-      value: "DAY1\u4E0E\u75C5\u623F\u7A97\u6237\u4EA4\u4E92 (091)"
+      value: "DAY1\u4E0E\u75C5\u623F\u7A97\u6237\u4EA4\u4E92 (012)"
       objectReference: {fileID: 0}
     - target: {fileID: 3542024871768552698, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
       propertyPath: targetFlowchart
@@ -3570,8 +3639,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2353453705784465036, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2003560112}
   m_SourcePrefab: {fileID: 100100000, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
+--- !u!1 &2003560111 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2353453705784465036, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
+  m_PrefabInstance: {fileID: 2003560110}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2003560112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003560111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d09b585c777741d4290b683722523cc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetFlowchart: {fileID: 86450040}
+  targetBlockName: "DAY1\u4E0E\u75C5\u623F\u7A97\u6237\u4EA4\u4E92 (012)"
+  triggerOnce: 1
 --- !u!1001 &2011142289
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -545,7 +545,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 129.47946
     y: 889.3098
-    width: 153.33334
+    width: 153
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -581,9 +581,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 284527770}
+  - {fileID: 284527780}
   selectedCommands:
-  - {fileID: 284527786}
+  - {fileID: 284527777}
   variables:
   - {fileID: 284527784}
   description: 
@@ -654,7 +654,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 135.97946
     y: 935.0598
-    width: 171.33334
+    width: 171
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -681,7 +681,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 144.97946
     y: 1032.5598
-    width: 173.33334
+    width: 173
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -762,7 +762,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 155.97946
     y: 992.5598
-    width: 172.66666
+    width: 172
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -810,7 +810,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 142.81279
     y: 1183.5598
-    width: 162.66666
+    width: 162
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1001,7 +1001,7 @@ MonoBehaviour:
   indentLevel: 0
   _targetGameObject:
     gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 593290383}
+    gameObjectVal: {fileID: 223547851}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -1153,12 +1153,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 146.97946
     y: 1074.0598
-    width: 153.33334
+    width: 129
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 58
-  blockName: "DAY1\u8857\u9053\u4E0E\u9E1F\u4EA4\u4E92"
+  blockName: "DAY1\u4E0E\u9E1F\u4EA4\u4E92"
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -1350,7 +1350,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &284527786
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1369,7 +1369,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &284527787
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1620,17 +1620,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d7abe94f9968064e8f0736851d16da5, type: 3}
---- !u!1 &593290383 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4221240404992576437, guid: 6d7abe94f9968064e8f0736851d16da5, type: 3}
-  m_PrefabInstance: {fileID: 593290382}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &593290384 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6820262539733851815, guid: 6d7abe94f9968064e8f0736851d16da5, type: 3}
   m_PrefabInstance: {fileID: 593290382}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 593290383}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
@@ -2023,6 +2018,10 @@ PrefabInstance:
       propertyPath: targetBlockName
       value: "DAY1\u8857\u9053\u4E0E\u8DEF\u4EBA1\u5BF9\u8BDD"
       objectReference: {fileID: 0}
+    - target: {fileID: 3542024871768552698, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
+      propertyPath: targetFlowchart
+      value: 
+      objectReference: {fileID: 284527761}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
