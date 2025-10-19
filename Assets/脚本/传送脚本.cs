@@ -19,13 +19,13 @@ public class ScenePortal : MonoBehaviour
 
     void Update()
     {
-        if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
+        /*if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
             TryTeleport();
-        }
+        }*/
     }
 
-    private void TryTeleport()
+    public void TryTeleport()
     {
         if (requiresCondition)
         {
