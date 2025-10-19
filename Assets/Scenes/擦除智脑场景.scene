@@ -1163,7 +1163,7 @@ MonoBehaviour:
   completedSprite: {fileID: 21300000, guid: 5188fc4ad6552254588594225bff55c9, type: 3}
   targetFlowchart: {fileID: 2138045769}
   puzzleCompleteBlockName: "\u6CBB\u7597\u5B8C\u6210"
-  sceneToReturnTo: "\u529E\u516C\u5BA41"
+  sceneToReturnTo: "\u529E\u516C\u5BA4"
   entryPointInReturnScene: "\u4ECE\u667A\u8111\u8FD4\u56DE"
 --- !u!61 &460341231
 BoxCollider2D:

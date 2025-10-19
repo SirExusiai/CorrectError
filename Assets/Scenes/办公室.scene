@@ -193,6 +193,7 @@ GameObject:
   - component: {fileID: 445254848}
   - component: {fileID: 445254847}
   - component: {fileID: 445254850}
+  - component: {fileID: 445254851}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: "\u53BB\u8D70\u5ECA\u7684\u95E8"
@@ -336,6 +337,21 @@ MonoBehaviour:
   - "\u5B8C\u6210\u6D4B\u8BD5\u5BF9\u8BDD"
   lockedFlowchart: {fileID: 1754561842}
   lockedBlockName: "\u95E8\u672A\u89E3\u9501\u5BF9\u8BDD"
+--- !u!114 &445254851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445254845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f5697ede21247458e2f920ecac3610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetFlowchart: {fileID: 1754561842}
+  targetBlockName: "DAY1\u4ECE\u529E\u516C\u5BA4\u5230\u8D70\u5ECA"
+  flagToSetOnInteract: 
 --- !u!1 &457675895
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,6 +892,52 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.947, y: -2.057, z: 0}
   m_LocalScale: {x: 1.9246, y: 5.6959, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &952739675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 7
+  m_Component:
+  - component: {fileID: 952739677}
+  - component: {fileID: 952739676}
+  m_Layer: 0
+  m_HasEditorInfo: 1
+  m_Name: "\u5750\u6807"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &952739676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952739675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ecc3a64b9a3e2040a48d9259c241f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entryName: "\u4ECE\u667A\u8111\u8FD4\u56DE"
+--- !u!4 &952739677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952739675}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.06, y: -1.21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1864,6 +1926,8 @@ GameObject:
   - component: {fileID: 1754561865}
   - component: {fileID: 1754561864}
   - component: {fileID: 1754561866}
+  - component: {fileID: 1754561867}
+  - component: {fileID: 1754561868}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Flowchart
@@ -1886,10 +1950,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  storyText: "\u4F60\u4E0D\u80FD\u901A\u8FC7"
+  storyText: "\u51FA\u95E8\u524D\u5148\u770B\u770B\u529E\u516C\u684C\u4E0A\u7684\u7535\u8111\u68C0\u67E5\u4E00\u4E0B\u4ECA\u5929\u7684\u5DE5\u4F5C\u5B89\u6392\u5427\u3002"
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 187517226}
+  portrait: {fileID: 21300000, guid: a45963b8a5d02a347ae102d090b944c9, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1981,9 +2045,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1754561856}
+  - {fileID: 1754561839}
   selectedCommands:
-  - {fileID: 1754561855}
+  - {fileID: 1754561838}
   variables:
   - {fileID: 1754561863}
   description: 
@@ -2972,6 +3036,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 23
   indentLevel: 0
+--- !u!114 &1754561867
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754561837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 97.81884
+    y: 573.9354
+    width: 163.52939
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 24
+  blockName: "DAY1\u4ECE\u529E\u516C\u5BA4\u5230\u8D70\u5ECA"
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1754561868}
+  suppressAllAutoSelections: 0
+--- !u!114 &1754561868
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754561837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 25
+  indentLevel: 0
+  targetObject: {fileID: 445254845}
+  methodName: TryTeleport
+  delay: 0
 --- !u!1 &1818107882
 GameObject:
   m_ObjectHideFlags: 0
@@ -3800,3 +3908,4 @@ SceneRoots:
   - {fileID: 2094097543}
   - {fileID: 4346602302736760964}
   - {fileID: 1733540200}
+  - {fileID: 952739677}
