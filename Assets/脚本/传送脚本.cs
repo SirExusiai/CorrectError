@@ -27,6 +27,7 @@ public class ScenePortal : MonoBehaviour
 
     public void TryTeleport()
     {
+        Debug.Log("Fungus 调用了 TryTeleport()");
         if (requiresCondition)
         {
             if (GameEventManager.instance.AreAllFlagsSet(requiredFlags))
