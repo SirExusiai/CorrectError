@@ -502,6 +502,8 @@ GameObject:
   - component: {fileID: 284527769}
   - component: {fileID: 284527784}
   - component: {fileID: 284527785}
+  - component: {fileID: 284527787}
+  - component: {fileID: 284527786}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Flowchart
@@ -543,7 +545,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 129.47946
     y: 889.3098
-    width: 153
+    width: 153.33334
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -581,7 +583,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 284527770}
   selectedCommands:
-  - {fileID: 284527785}
+  - {fileID: 284527786}
   variables:
   - {fileID: 284527784}
   description: 
@@ -652,7 +654,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 135.97946
     y: 935.0598
-    width: 171
+    width: 171.33334
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -679,7 +681,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 144.97946
     y: 1032.5598
-    width: 173
+    width: 173.33334
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -760,7 +762,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 155.97946
     y: 992.5598
-    width: 172
+    width: 172.66666
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -806,9 +808,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 141.47946
+    x: 142.81279
     y: 1183.5598
-    width: 162
+    width: 162.66666
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -824,6 +826,8 @@ MonoBehaviour:
   - {fileID: 284527771}
   - {fileID: 284527769}
   - {fileID: 284527785}
+  - {fileID: 284527787}
+  - {fileID: 284527786}
   suppressAllAutoSelections: 0
 --- !u!114 &284527771
 MonoBehaviour:
@@ -1041,7 +1045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 229.97946
+    x: 231.97945
     y: 1132.0598
     width: 86
     height: 40
@@ -1149,7 +1153,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 146.97946
     y: 1074.0598
-    width: 153
+    width: 153.33334
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1179,7 +1183,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &284527785
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1344,6 +1348,45 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &284527786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284527758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 77
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: "\u96EA\u82B1\u5C4F\uFF08\u76F4\u8FBE\u667A\u8111\uFF09"
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &284527787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284527758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 76
+  indentLevel: 0
+  duration: 1
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  fadeTweenType: 4
 --- !u!1 &487674849
 GameObject:
   m_ObjectHideFlags: 1
@@ -2299,8 +2342,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1798805659
-  m_SortingLayer: 1
+  m_SortingLayerID: 1078928423
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5d6cc0381103d004192e682f8f3438cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

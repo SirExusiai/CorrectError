@@ -189,6 +189,52 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
+--- !u!1 &399883392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 7
+  m_Component:
+  - component: {fileID: 399883394}
+  - component: {fileID: 399883393}
+  m_Layer: 0
+  m_HasEditorInfo: 1
+  m_Name: "\u4ECE\u667A\u8111\u8FD4\u56DE"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &399883393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399883392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ecc3a64b9a3e2040a48d9259c241f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entryName: "\u4ECE\u667A\u8111\u8FD4\u56DE"
+--- !u!4 &399883394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399883392}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.36, y: -1.21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &529479499
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,8 +624,8 @@ Transform:
   m_GameObject: {fileID: 1303237644}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.48, y: -1.94, z: 0}
-  m_LocalScale: {x: 0.684, y: 0.533, z: 1}
+  m_LocalPosition: {x: -4.48, y: -1.8213, z: 0}
+  m_LocalScale: {x: 0.684, y: 0.5504472, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1130,6 +1176,9 @@ GameObject:
   - component: {fileID: 1991041836}
   - component: {fileID: 1991041835}
   - component: {fileID: 1991041833}
+  - component: {fileID: 1991041852}
+  - component: {fileID: 1991041851}
+  - component: {fileID: 1991041853}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Flowchart
@@ -1151,7 +1200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -29.979462, y: -632.5598}
+  scrollPos: {x: 78.02054, y: -533.22644}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -1163,9 +1212,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1991041834}
+  - {fileID: 1991041852}
   selectedCommands:
-  - {fileID: 1991041833}
+  - {fileID: 1991041851}
   variables:
   - {fileID: 1991041829}
   description: 
@@ -1194,7 +1243,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 134.47946
     y: 806.3098
-    width: 177
+    width: 177.33334
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1295,7 +1344,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 129.97946
     y: 738.0598
-    width: 146
+    width: 170
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1338,7 +1387,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1991041833
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1352,7 +1401,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &1991041834
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1366,7 +1415,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 134.97946
     y: 859.8098
-    width: 155
+    width: 167.33334
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1388,7 +1437,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &1991041835
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1415,7 +1464,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1991041836
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1688,7 +1737,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1991041837
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1702,7 +1751,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &1991041838
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1729,7 +1778,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1991041839
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1756,7 +1805,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1991041840
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1783,7 +1832,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1991041841
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1810,7 +1859,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1991041842
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1837,7 +1886,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1991041843
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2110,7 +2159,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1991041844
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2277,7 +2326,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1991041845
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2574,6 +2623,68 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &1991041851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991041822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 74
+  indentLevel: 0
+  duration: 1
+  targetAlpha: 0
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  fadeTweenType: 4
+--- !u!114 &1991041852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991041822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 405.3128
+    y: 763.8931
+    width: 113.33333
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 73
+  blockName: New Block
+  description: 
+  eventHandler: {fileID: 1991041853}
+  commandList:
+  - {fileID: 1991041851}
+  suppressAllAutoSelections: 0
+--- !u!114 &1991041853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991041822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1991041852}
+  suppressBlockAutoSelect: 0
+  waitForFrames: 1
 --- !u!1 &2062920219 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1534713688841458741, guid: a879004f67a771e45a6861a437d53d6c, type: 3}
@@ -2660,3 +2771,4 @@ SceneRoots:
   - {fileID: 1160528827}
   - {fileID: 314326079}
   - {fileID: 1613280479}
+  - {fileID: 399883394}
