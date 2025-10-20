@@ -280,7 +280,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 107.70759
     y: 645.4916
-    width: 163.52939
+    width: 162.94116
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -808,7 +808,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 106.07706
     y: 684.31055
-    width: 194.70586
+    width: 194.3137
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -862,7 +862,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 107.00098
     y: 606.9591
-    width: 175.2941
+    width: 174.70587
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -889,7 +889,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 109.88158
     y: 724.4046
-    width: 194.70586
+    width: 194.3137
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1298,7 +1298,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 112.07326
     y: 564.3099
-    width: 148.82352
+    width: 148.0392
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1342,7 +1342,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 129.47946
     y: 889.3098
-    width: 151.76468
+    width: 151.17645
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1420,7 +1420,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 145.66699
     y: 855.71606
-    width: 171.76468
+    width: 171.5686
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1447,7 +1447,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 141.76076
     y: 811.96606
-    width: 171.76468
+    width: 171.5686
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1474,7 +1474,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 136.29202
     y: 772.9036
-    width: 163.52939
+    width: 162.94116
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2493,7 +2493,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlowchart: {fileID: 86450040}
   targetBlockName: "DAY1\u4E0E\u75C5\u623F\u7A97\u6237\u4EA4\u4E92"
-  triggerOnce: 1
+  triggerOnceGlobally: 1
+  triggerFlagName: "\u5DF2\u5B8C\u62102"
 --- !u!1 &809329094
 GameObject:
   m_ObjectHideFlags: 0
@@ -2754,7 +2755,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlowchart: {fileID: 86450040}
   targetBlockName: "DAY1\u4E0E\u75C5\u623F\u7A97\u6237\u4EA4\u4E92"
-  triggerOnce: 1
+  triggerOnceGlobally: 1
+  triggerFlagName: "\u5DF2\u5B8C\u62100"
 --- !u!1 &1215151095
 GameObject:
   m_ObjectHideFlags: 0
@@ -3190,7 +3192,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlowchart: {fileID: 86450040}
   targetBlockName: "DAY1\u4E0E\u75C5\u623F\u7A97\u6237\u4EA4\u4E92 (091)"
-  triggerOnce: 1
+  triggerOnceGlobally: 1
+  triggerFlagName: "\u5DF2\u5B8C\u62103"
 --- !u!1 &1710918741
 GameObject:
   m_ObjectHideFlags: 0
@@ -3421,7 +3424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlowchart: {fileID: 86450040}
   targetBlockName: "DAY1\u4E0E\u75C5\u623F\u7A97\u6237\u4EA4\u4E92"
-  triggerOnce: 1
+  triggerOnceGlobally: 1
+  triggerFlagName: "\u5DF2\u5B8C\u62101"
 --- !u!1 &1959389850
 GameObject:
   m_ObjectHideFlags: 0
@@ -3663,7 +3667,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetFlowchart: {fileID: 86450040}
   targetBlockName: "DAY1\u4E0E\u75C5\u623F\u7A97\u6237\u4EA4\u4E92 (012)"
-  triggerOnce: 1
+  triggerOnceGlobally: 1
+  triggerFlagName: 
 --- !u!1001 &2011142289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4004,11 +4009,11 @@ SceneRoots:
   - {fileID: 254170711}
   - {fileID: 1525687692}
   - {fileID: 1932359664}
+  - {fileID: 1077385226}
   - {fileID: 1332068764}
   - {fileID: 86450041}
   - {fileID: 1533990852}
   - {fileID: 1518675264}
   - {fileID: 357981374}
-  - {fileID: 1077385226}
   - {fileID: 1061785921}
   - {fileID: 2011142289}
