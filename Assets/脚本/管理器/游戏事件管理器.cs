@@ -140,4 +140,38 @@ public class GameEventManager : MonoBehaviour
         }
         return true; // 所有旗標都是 false
     }
+    public void Call_Player_ChangeToPersistentSprite()
+    {
+        if (PlayerPersistence.instance != null)
+        {
+            TemporarySpriteChanger changer = PlayerPersistence.instance.GetComponent<TemporarySpriteChanger>();
+            if (changer != null)
+            {
+                changer.ChangeToPersistentSprite();
+            }
+        }
+        else
+        {
+            Debug.LogError("GameEventManager: 找不到持久化的玩家實例！");
+        }
+    }
+
+    /// <summary>
+    /// 從 Fungus 呼叫，用來找到持久化的玩家並執行其 RevertToDefaultState 函式。
+    /// </summary>
+    public void Call_Player_RevertToDefaultState()
+    {
+        if (PlayerPersistence.instance != null)
+        {
+            TemporarySpriteChanger changer = PlayerPersistence.instance.GetComponent<TemporarySpriteChanger>();
+            if (changer != null)
+            {
+                changer.RevertToDefaultState();
+            }
+        }
+        else
+        {
+            Debug.LogError("GameEventManager: 找不到持久化的玩家實例！");
+        }
+    }
 }
