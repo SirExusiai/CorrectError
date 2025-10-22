@@ -646,7 +646,6 @@ GameObject:
   - component: {fileID: 598426508}
   - component: {fileID: 598426498}
   - component: {fileID: 598426507}
-  - component: {fileID: 598426506}
   - component: {fileID: 598426505}
   - component: {fileID: 598426504}
   - component: {fileID: 598426503}
@@ -720,8 +719,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 69.666664
-    y: 68.66667
-    width: 113.33333
+    y: 69.66667
+    width: 111
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -733,7 +732,6 @@ MonoBehaviour:
   - {fileID: 598426492}
   - {fileID: 598426485}
   - {fileID: 598426496}
-  - {fileID: 598426506}
   suppressAllAutoSelections: 0
 --- !u!114 &598426488
 MonoBehaviour:
@@ -760,9 +758,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 598426498}
+  - {fileID: 598426487}
   selectedCommands:
-  - {fileID: 598426497}
+  - {fileID: 598426496}
   variables:
   - {fileID: 598426494}
   description: 
@@ -867,7 +865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 30
   indentLevel: 0
-  storyText: "\uFF1F"
+  storyText: "\u90A3\u662F\u4EC0\u4E48\uFF1F\u4E00\u4E2A\u2026\u2026bug\uFF1F"
   description: 
   character: {fileID: 197551514}
   portrait: {fileID: 21300000, guid: a45963b8a5d02a347ae102d090b944c9, type: 3}
@@ -1093,33 +1091,6 @@ MonoBehaviour:
   waitUntilFinished: 1
   durationOLD: 0
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &598426506
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598426483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 36
-  indentLevel: 0
-  storyText: "\u4E0E\u6628\u5929\u4E0D\u540C\u4E86"
-  description: 
-  character: {fileID: 197551514}
-  portrait: {fileID: 21300000, guid: a45963b8a5d02a347ae102d090b944c9, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &598426507
 MonoBehaviour:
   m_ObjectHideFlags: 2
