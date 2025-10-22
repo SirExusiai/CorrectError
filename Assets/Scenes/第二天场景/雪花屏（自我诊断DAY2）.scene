@@ -882,7 +882,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &598426497
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -978,7 +978,7 @@ MonoBehaviour:
   fadeTweenType: 4
 --- !u!114 &598426501
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1211,6 +1211,7 @@ GameObject:
   - component: {fileID: 778716763}
   - component: {fileID: 778716762}
   - component: {fileID: 778716761}
+  - component: {fileID: 778716764}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: "\u9E1F\u5C38\u4F53"
@@ -1232,7 +1233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetFlowchart: {fileID: 598426488}
-  targetBlockName: 
+  targetBlockName: "\u70B9\u51FB\u9519\u8BEF\u7684\u9E1F"
 --- !u!212 &778716762
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1304,6 +1305,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &778716764
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778716760}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6.9999995, y: 6.9999995, z: 0.19999999}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &841073920
 GameObject:
   m_ObjectHideFlags: 0
