@@ -1000,7 +1000,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 82525415764933120, guid: 1a020dac1afa33544bc701a7ad37c1da, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.0334
+      value: -1.21
       objectReference: {fileID: 0}
     - target: {fileID: 82525415764933120, guid: 1a020dac1afa33544bc701a7ad37c1da, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1164,6 +1164,10 @@ GameObject:
   - component: {fileID: 1762197426}
   - component: {fileID: 1762197429}
   - component: {fileID: 1762197428}
+  - component: {fileID: 1762197430}
+  - component: {fileID: 1762197431}
+  - component: {fileID: 1762197432}
+  - component: {fileID: 1762197433}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Flowchart
@@ -1197,9 +1201,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1762197363}
+  - {fileID: 1762197389}
   selectedCommands:
-  - {fileID: 1762197428}
+  - {fileID: 1762197433}
   variables:
   - {fileID: 1762197361}
   - {fileID: 1762197387}
@@ -1250,7 +1254,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 129.47946
     y: 888.3098
-    width: 174.66666
+    width: 174
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1309,7 +1313,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 125.97946
     y: 665.0598
-    width: 138.66666
+    width: 138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1672,7 +1676,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 125.97946
     y: 733.0598
-    width: 150.66666
+    width: 150
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2341,7 +2345,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 126.97946
     y: 802.5598
-    width: 167.33334
+    width: 167
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2351,9 +2355,12 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1762197377}
+  - {fileID: 1762197430}
   - {fileID: 1762197376}
+  - {fileID: 1762197431}
   - {fileID: 1762197375}
   - {fileID: 1762197374}
+  - {fileID: 1762197432}
   - {fileID: 1762197373}
   - {fileID: 1762197415}
   - {fileID: 1762197386}
@@ -3202,6 +3209,7 @@ MonoBehaviour:
   eventHandler: {fileID: 1762197390}
   commandList:
   - {fileID: 1762197401}
+  - {fileID: 1762197433}
   - {fileID: 1762197400}
   - {fileID: 1762197396}
   - {fileID: 1762197399}
@@ -6238,7 +6246,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1762197428
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6262,7 +6270,7 @@ MonoBehaviour:
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &1762197429
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6281,6 +6289,81 @@ MonoBehaviour:
   _targetColor:
     colorRef: {fileID: 0}
     colorVal: {r: 1, g: 1, b: 1, a: 0}
+  waitUntilFinished: 1
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &1762197430
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762197356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 117
+  indentLevel: 1
+  targetObject: {fileID: 58148255}
+  methodName: ChangeToPersistent
+  delay: 0
+--- !u!114 &1762197431
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762197356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 118
+  indentLevel: 1
+  targetObject: {fileID: 58148255}
+  methodName: RevertToDefault
+  delay: 0
+--- !u!114 &1762197432
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762197356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 119
+  indentLevel: 1
+  targetObject: {fileID: 58148255}
+  methodName: ChangeToPersistent
+  delay: 0
+--- !u!114 &1762197433
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762197356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 120
+  indentLevel: 1
+  spriteRenderer: {fileID: 2001942440}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
   waitUntilFinished: 1
   durationOLD: 0
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}

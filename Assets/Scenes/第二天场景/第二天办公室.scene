@@ -1152,6 +1152,8 @@ GameObject:
   - component: {fileID: 1193034323}
   - component: {fileID: 1193034322}
   - component: {fileID: 1193034321}
+  - component: {fileID: 1193034333}
+  - component: {fileID: 1193034332}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Flowchart
@@ -1236,7 +1238,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 89.13533
     y: 624.6917
-    width: 126.078415
+    width: 125.88234
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1600,12 +1602,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 96.2502
     y: 574.7197
-    width: 162.94116
+    width: 164.70587
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 24
-  blockName: "DAY1\u4ECE\u529E\u516C\u5BA4\u5230\u8D70\u5ECA"
+  blockName: "DAY2\u4ECE\u529E\u516C\u5BA4\u5230\u8D70\u5ECA"
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -2194,12 +2196,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 95.71564
     y: 534.4413
-    width: 145.68625
+    width: 147.0588
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 15
-  blockName: "DAY1\u8DF3\u8F6C1\u5230\u667A\u8111"
+  blockName: "DAY2\u8DF3\u8F6C1\u5230\u667A\u8111"
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -2248,12 +2250,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 102.13723
     y: 478.78427
-    width: 139.41174
+    width: 141.17645
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 13
-  blockName: "DAY1\u4E0E\u955C\u5B50\u4EA4\u4E92"
+  blockName: "DAY2\u4E0E\u955C\u5B50\u4EA4\u4E92"
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -2333,12 +2335,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 95
     y: 383
-    width: 139.41174
+    width: 141.17645
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 10
-  blockName: "DAY1\u4E0E\u7A97\u6237\u4EA4\u4E92"
+  blockName: "DAY2\u4E0E\u7A97\u6237\u4EA4\u4E92"
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -2385,14 +2387,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 96
+    x: 97.17647
     y: 349
-    width: 127.64705
+    width: 129.41174
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 8
-  blockName: "DAY1\u4E0E\u5E8A\u4EA4\u4E92"
+  blockName: "DAY2\u4E0E\u5E8A\u4EA4\u4E92"
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -2456,12 +2458,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 93.5
     y: 314.5
-    width: 132.35294
+    width: 132.94116
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 6
-  blockName: "Day1\u521D\u59CB1\u5BF9\u8BDD"
+  blockName: "Day2\u521D\u59CB1\u5BF9\u8BDD"
   description: 
   eventHandler: {fileID: 1193034286}
   commandList:
@@ -2619,18 +2621,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 97.5
-    y: 416
-    width: 139.41174
+    x: 549.85315
+    y: 331.2942
+    width: 141.17645
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 0
-  blockName: "DAY1\u529E\u516C\u684C\u4EA4\u4E92"
+  blockName: "DAY2\u529E\u516C\u684C\u4EA4\u4E92"
   description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1193034296}
+  - {fileID: 1193034333}
+  - {fileID: 1193034332}
   - {fileID: 1193034290}
   - {fileID: 1193034289}
   - {fileID: 1193034288}
@@ -2664,8 +2668,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1193034287}
-  selectedCommands: []
+  - {fileID: 1193034293}
+  selectedCommands:
+  - {fileID: 1193034333}
   variables:
   - {fileID: 1193034261}
   - {fileID: 1193034260}
@@ -5140,7 +5145,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 95.9357
     y: 260.6366
-    width: 127.64705
+    width: 128.23529
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5160,6 +5165,56 @@ MonoBehaviour:
   - {fileID: 1193034322}
   - {fileID: 1193034323}
   suppressAllAutoSelections: 0
+--- !u!114 &1193034332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193034248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 130
+  indentLevel: 0
+  text: Option Text
+  description: 
+  targetBlock: {fileID: 0}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &1193034333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193034248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 129
+  indentLevel: 0
+  text: 
+  description: 
+  targetBlock: {fileID: 0}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!1 &1295047705
 GameObject:
   m_ObjectHideFlags: 0

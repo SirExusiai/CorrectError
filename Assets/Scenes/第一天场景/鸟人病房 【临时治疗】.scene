@@ -397,7 +397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 82525415764933120, guid: 1a020dac1afa33544bc701a7ad37c1da, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.042
+      value: -1.21
       objectReference: {fileID: 0}
     - target: {fileID: 82525415764933120, guid: 1a020dac1afa33544bc701a7ad37c1da, type: 3}
       propertyPath: m_LocalPosition.z
@@ -456,6 +456,54 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a020dac1afa33544bc701a7ad37c1da, type: 3}
+--- !u!1 &1026095706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 7
+  m_Component:
+  - component: {fileID: 1026095708}
+  - component: {fileID: 1026095707}
+  m_Layer: 0
+  m_HasEditorInfo: 1
+  m_Name: "\u80CC\u8EAB"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1026095707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026095706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b43bc0759cf09a46b6d751cc94926af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSpriteRenderer: {fileID: 0}
+  temporarySprite: {fileID: 21300000, guid: f946cdce034385e439730d5ccbd5662c, type: 3}
+  duration: 1
+--- !u!4 &1026095708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026095706}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.377006, y: -2.6733139, z: 0.043405473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1274653571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,6 +1083,7 @@ GameObject:
   - component: {fileID: 1991041864}
   - component: {fileID: 1991041867}
   - component: {fileID: 1991041866}
+  - component: {fileID: 1991041868}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Flowchart
@@ -1068,7 +1117,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1991041852}
+  - {fileID: 1991041858}
   selectedCommands: []
   variables:
   - {fileID: 1991041829}
@@ -1336,6 +1385,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1991041868}
   - {fileID: 1991041859}
   - {fileID: 1991041861}
   - {fileID: 1991041860}
@@ -1511,6 +1561,23 @@ MonoBehaviour:
   scope: 0
   key: "\u4F20\u9001\u951A"
   value: {fileID: 610418221}
+--- !u!114 &1991041868
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991041822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 86
+  indentLevel: 0
+  targetObject: {fileID: 1026095706}
+  methodName: ChangeToPersistent
+  delay: 0
 --- !u!1001 &4411041903086004314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1596,3 +1663,4 @@ SceneRoots:
   - {fileID: 1613280479}
   - {fileID: 777326241}
   - {fileID: 610418221}
+  - {fileID: 1026095708}
