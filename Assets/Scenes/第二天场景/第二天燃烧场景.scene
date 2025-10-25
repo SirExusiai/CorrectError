@@ -2976,10 +2976,6 @@ GameObject:
   - component: {fileID: 2138045769}
   - component: {fileID: 2138045771}
   - component: {fileID: 2138045770}
-  - component: {fileID: 2138045775}
-  - component: {fileID: 2138045776}
-  - component: {fileID: 2138045777}
-  - component: {fileID: 2138045778}
   - component: {fileID: 2138045779}
   - component: {fileID: 2138045781}
   - component: {fileID: 2138045786}
@@ -3026,8 +3022,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 2138045775}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 2138045782}
@@ -3084,7 +3079,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67.66667
     y: 70.66669
-    width: 123.958305
+    width: 120.31247
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3110,99 +3105,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2138045775
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138045768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 81
-    y: -21.791649
-    width: 99.999985
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 2
-  blockName: "\u6CBB\u7597\u5B8C\u6210"
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 2138045776}
-  - {fileID: 2138045778}
-  - {fileID: 2138045777}
-  suppressAllAutoSelections: 0
---- !u!114 &2138045776
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138045768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 3
-  indentLevel: 0
-  storyText: "\u6CBB\u7597\u5B8C\u6210\uFF0C\u5373\u5C06\u8FD4\u56DE"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &2138045777
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138045768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 4
-  indentLevel: 0
-  targetObject: {fileID: 460341227}
-  methodName: ReturnToPreviousScene
-  delay: 0.2
---- !u!114 &2138045778
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138045768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 5
-  indentLevel: 0
-  duration: 1
-  targetAlpha: 1
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  fadeTweenType: 4
 --- !u!114 &2138045779
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3219,7 +3121,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 240.33339
     y: 157.83337
-    width: 112.49997
+    width: 108.59372
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3753,7 +3655,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 242.33334
     y: 59.833344
-    width: 112.49997
+    width: 108.59372
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3838,7 +3740,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 494
     y: -41
-    width: 99.999985
+    width: 96.874985
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3866,7 +3768,7 @@ MonoBehaviour:
   waitForFrames: 1
 --- !u!114 &2138045792
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3886,7 +3788,7 @@ MonoBehaviour:
   fadeTweenType: 4
 --- !u!114 &2138045793
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

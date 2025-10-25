@@ -3082,8 +3082,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2138045809}
-  selectedCommands: []
+  - {fileID: 2138045806}
+  selectedCommands:
+  - {fileID: 2138045805}
   variables:
   - {fileID: 2138045808}
   description: 
@@ -3636,7 +3637,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 224.58401
-    y: -8.69759
+    y: -9.69759
     width: 98
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3951,7 +3952,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 218.23029
     y: 195.16676
-    width: 105.33333
+    width: 105
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3978,7 +3979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 53
   indentLevel: 0
-  storyText: "\u73B0\u5728\u80FD\u591F\u5C06\u7EA2\u7EBF\u526A\u65AD"
+  storyText: "\u73B0\u5728\u80FD\u591F\u5C06\u77E5\u89C9\u4E0E\u5927\u8111\u7684\u8054\u7CFB\u6682\u65F6\u526A\u9664\u4E86\u3002"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4101,7 +4102,7 @@ MonoBehaviour:
   indentLevel: 1
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal: DAY3091ROOM
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &2138045811

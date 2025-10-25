@@ -768,6 +768,7 @@ GameObject:
   - component: {fileID: 849956276}
   - component: {fileID: 849956275}
   - component: {fileID: 849956277}
+  - component: {fileID: 849956278}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Flowchart
@@ -792,7 +793,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 66
     y: -36.500015
-    width: 79.333336
+    width: 78
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -818,7 +819,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 64.66669
     y: 22.166641
-    width: 74
+    width: 73
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -843,9 +844,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 66.33331
-    y: 70
-    width: 77.333336
+    x: 65.83331
+    y: 71
+    width: 77
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -883,9 +884,9 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 849956272}
-  selectedCommands:
-  - {fileID: 849956277}
-  variables: []
+  selectedCommands: []
+  variables:
+  - {fileID: 849956278}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -941,7 +942,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: "\u529E\u516C\u5BA4"
+    stringVal: "\u5929\u6570\u8DF3\u8F6C"
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &849956277
@@ -964,6 +965,21 @@ MonoBehaviour:
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
   fadeTweenType: 4
+--- !u!114 &849956278
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849956269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 2
+  key: Var
+  value: 0
 --- !u!1 &950891110
 GameObject:
   m_ObjectHideFlags: 0
