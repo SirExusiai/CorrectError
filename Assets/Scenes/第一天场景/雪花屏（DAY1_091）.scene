@@ -775,8 +775,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 598426487}
-  selectedCommands:
-  - {fileID: 598426490}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -1183,7 +1182,7 @@ MonoBehaviour:
   fadeTweenType: 4
 --- !u!114 &598426505
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1210,7 +1209,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &598426506
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
