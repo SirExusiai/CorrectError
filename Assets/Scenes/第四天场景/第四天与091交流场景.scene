@@ -811,8 +811,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 598426487}
-  selectedCommands:
-  - {fileID: 598426519}
+  selectedCommands: []
   variables:
   - {fileID: 598426517}
   description: 
@@ -1297,7 +1296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 2
-  key: "\u5C1D\u8BD5\u65B0\u65B9\u6CD5\u6CBB\u7597091"
+  key: "\u68C0\u67E5091\u667A\u8111\u60C5\u51B5"
   value: 0
 --- !u!114 &598426518
 MonoBehaviour:

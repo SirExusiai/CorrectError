@@ -1277,7 +1277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 2
   key: "DAY4\u5E8A\u5F00\u5173"
-  value: 0
+  value: 1
 --- !u!114 &1193034253
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2610,7 +2610,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1193034265}
+  - {fileID: 1193034284}
   selectedCommands: []
   variables:
   - {fileID: 1193034261}
@@ -5280,7 +5280,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1193034366
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6327,7 +6327,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u7B2C3\u5929"
+  m_text: "\u7B2C4\u5929"
   m_enableAdvanceTextProcess: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f3e63adf26948e5429748eadc5d8a725, type: 2}
