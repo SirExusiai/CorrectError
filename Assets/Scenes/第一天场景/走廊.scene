@@ -159,7 +159,6 @@ GameObject:
   - component: {fileID: 86450060}
   - component: {fileID: 86450068}
   - component: {fileID: 86450077}
-  - component: {fileID: 86450076}
   - component: {fileID: 86450075}
   - component: {fileID: 86450074}
   - component: {fileID: 86450073}
@@ -223,7 +222,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 86450077}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 86450075}
   variables:
   - {fileID: 86450042}
   - {fileID: 86450089}
@@ -237,7 +237,8 @@ MonoBehaviour:
   saveSelection: 1
   localizationId: 
   showLineNumbers: 0
-  hideCommands: []
+  hideCommands:
+  - 
   luaEnvironment: {fileID: 0}
   luaBindingName: flowchart
 --- !u!4 &86450041
@@ -1596,21 +1597,6 @@ MonoBehaviour:
   targetObject: {fileID: 1332281170}
   methodName: RevertToDefault
   delay: 0
---- !u!114 &86450076
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86450014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 86450077}
-  suppressBlockAutoSelect: 0
-  waitForFrames: 1
 --- !u!114 &86450077
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1634,7 +1620,7 @@ MonoBehaviour:
   itemId: 53
   blockName: "\u6D88\u9664\u9ED1\u5E55"
   description: 
-  eventHandler: {fileID: 86450076}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 86450075}
   - {fileID: 86450070}
