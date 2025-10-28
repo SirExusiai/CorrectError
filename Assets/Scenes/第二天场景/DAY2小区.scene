@@ -1395,6 +1395,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1366656244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 7
+  m_Component:
+  - component: {fileID: 1366656246}
+  - component: {fileID: 1366656245}
+  m_Layer: 0
+  m_HasEditorInfo: 1
+  m_Name: "\u4F20\u9001\u75C5\u623F"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1366656245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366656244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7444f8531418ca438de3c1ba18b2489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: "023\u75C5\u623F \u3010\u4E34\u65F6\u6CBB\u7597\u3011"
+  entryPointName: "\u5C0F\u533A\u8FDB\u5165\u75C5\u623F"
+  requiresCondition: 0
+  requiredFlags: []
+  lockedFlowchart: {fileID: 2145019762}
+  lockedBlockName: 
+--- !u!4 &1366656246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366656244}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.019253, y: 5.7095428, z: -0.07167535}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1381852232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2382,7 +2433,6 @@ GameObject:
   - component: {fileID: 2145019767}
   - component: {fileID: 2145019786}
   - component: {fileID: 2145019785}
-  - component: {fileID: 2145019784}
   - component: {fileID: 2145019783}
   - component: {fileID: 2145019782}
   - component: {fileID: 2145019781}
@@ -2406,6 +2456,7 @@ GameObject:
   - component: {fileID: 2145019805}
   - component: {fileID: 2145019804}
   - component: {fileID: 2145019803}
+  - component: {fileID: 2145019806}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Flowchart
@@ -2440,7 +2491,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 2145019793}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 2145019806}
   variables:
   - {fileID: 2145019767}
   - {fileID: 2145019766}
@@ -2575,7 +2627,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 135.97946
     y: 935.0598
-    width: 140.71425
+    width: 142.38092
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2602,7 +2654,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 148.35233
     y: 1081.6512
-    width: 142.8571
+    width: 144.28568
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3834,7 +3886,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 717.84753
     y: 1228.0884
-    width: 98.57141
+    width: 99.52379
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3917,9 +3969,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 554.9343
-    y: 1068.1125
-    width: 98.57141
+    x: 302.55328
+    y: 1072.8745
+    width: 99.52379
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3931,25 +3983,6 @@ MonoBehaviour:
   - {fileID: 2145019781}
   - {fileID: 2145019780}
   suppressAllAutoSelections: 0
---- !u!114 &2145019784
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145019761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 77
-  indentLevel: 0
-  _sceneName:
-    stringRef: {fileID: 0}
-    stringVal: "023\u75C5\u623F \u3010\u4E34\u65F6\u6CBB\u7597\u3011"
-  loadingImage: {fileID: 0}
-  sceneNameOLD: 
 --- !u!114 &2145019785
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4286,9 +4319,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 142.81279
+    x: 141.8604
     y: 1183.5598
-    width: 164.99995
+    width: 163.33328
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4307,7 +4340,7 @@ MonoBehaviour:
   - {fileID: 2145019803}
   - {fileID: 2145019786}
   - {fileID: 2145019785}
-  - {fileID: 2145019784}
+  - {fileID: 2145019806}
   suppressAllAutoSelections: 0
 --- !u!114 &2145019794
 MonoBehaviour:
@@ -4352,7 +4385,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 144.97946
     y: 1032.5598
-    width: 142.8571
+    width: 144.28568
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4406,7 +4439,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 156.97946
     y: 992.5598
-    width: 142.14282
+    width: 143.3333
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4450,7 +4483,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 129.47946
     y: 889.3098
-    width: 147.14282
+    width: 149.04758
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4605,6 +4638,23 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &2145019806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145019761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 129
+  indentLevel: 0
+  targetObject: {fileID: 1366656244}
+  methodName: TryTeleport
+  delay: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -4636,3 +4686,4 @@ SceneRoots:
   - {fileID: 1662675655}
   - {fileID: 2143131399}
   - {fileID: 677277293}
+  - {fileID: 1366656246}

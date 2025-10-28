@@ -2946,6 +2946,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2115867097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 7
+  m_Component:
+  - component: {fileID: 2115867099}
+  - component: {fileID: 2115867098}
+  m_Layer: 0
+  m_HasEditorInfo: 1
+  m_Name: "\u4F20\u9001\u75C5\u623F"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2115867098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115867097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7444f8531418ca438de3c1ba18b2489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: "\u6811\u4EBA\u75C5\u623F \u3010\u4E34\u65F6\u6CBB\u7597\u3011"
+  entryPointName: "\u516C\u56ED\u8FDB\u5165\u6811\u4EBA\u75C5\u623F"
+  requiresCondition: 0
+  requiredFlags: []
+  lockedFlowchart: {fileID: 0}
+  lockedBlockName: 
+--- !u!4 &2115867099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115867097}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.79737, y: 2.3143668, z: -0.07167535}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2131643354
 GameObject:
   m_ObjectHideFlags: 0
@@ -3229,10 +3280,10 @@ GameObject:
   - component: {fileID: 2145019849}
   - component: {fileID: 2145019848}
   - component: {fileID: 2145019850}
-  - component: {fileID: 2145019847}
   - component: {fileID: 2145019877}
   - component: {fileID: 2145019878}
   - component: {fileID: 2145019876}
+  - component: {fileID: 2145019879}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Flowchart
@@ -3267,7 +3318,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 2145019826}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 2145019879}
   variables:
   - {fileID: 2145019766}
   - {fileID: 2145019765}
@@ -5037,7 +5089,7 @@ MonoBehaviour:
   - {fileID: 2145019852}
   - {fileID: 2145019851}
   - {fileID: 2145019850}
-  - {fileID: 2145019847}
+  - {fileID: 2145019879}
   - {fileID: 2145019849}
   - {fileID: 2145019848}
   suppressAllAutoSelections: 0
@@ -5503,25 +5555,6 @@ MonoBehaviour:
   scope: 2
   key: "\u610F\u89C1218"
   value: 0
---- !u!114 &2145019847
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145019761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 216
-  indentLevel: 2
-  _sceneName:
-    stringRef: {fileID: 0}
-    stringVal: "\u6811\u4EBA\u75C5\u623F \u3010\u4E34\u65F6\u6CBB\u7597\u3011"
-  loadingImage: {fileID: 0}
-  sceneNameOLD: 
 --- !u!114 &2145019848
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8043,6 +8076,23 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 0
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &2145019879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145019761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 220
+  indentLevel: 2
+  targetObject: {fileID: 2115867097}
+  methodName: TryTeleport
+  delay: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -8082,3 +8132,4 @@ SceneRoots:
   - {fileID: 931454767}
   - {fileID: 199518000}
   - {fileID: 104939064}
+  - {fileID: 2115867099}

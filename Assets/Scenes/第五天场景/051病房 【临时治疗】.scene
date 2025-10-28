@@ -1305,6 +1305,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1811133406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 7
+  m_Component:
+  - component: {fileID: 1811133408}
+  - component: {fileID: 1811133407}
+  m_Layer: 0
+  m_HasEditorInfo: 1
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1811133407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811133406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ecc3a64b9a3e2040a48d9259c241f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entryName: "\u5C0F\u533A\u8FDB\u5165\u75C5\u623F"
+--- !u!4 &1811133408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811133406}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.53, y: -1.21, z: -0.07167535}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1991041822
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,9 +1373,7 @@ GameObject:
   - component: {fileID: 1991041861}
   - component: {fileID: 1991041860}
   - component: {fileID: 1991041862}
-  - component: {fileID: 1991041865}
   - component: {fileID: 1991041863}
-  - component: {fileID: 1991041864}
   - component: {fileID: 1991041867}
   - component: {fileID: 1991041866}
   - component: {fileID: 1991041868}
@@ -1370,9 +1414,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1991041834}
-  selectedCommands:
-  - {fileID: 1991041855}
+  - {fileID: 1991041852}
+  selectedCommands: []
   variables:
   - {fileID: 1991041829}
   - {fileID: 1991041854}
@@ -1407,7 +1450,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 136.29764
     y: 804.994
-    width: 120.90904
+    width: 122.72723
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1465,7 +1508,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 138.21413
     y: 857.99164
-    width: 132.72722
+    width: 134.84843
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1490,9 +1533,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 23.800886
-    y: 521.7872
-    width: 97.27269
+    x: 146.22504
+    y: 657.5451
+    width: 98.48482
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1501,8 +1544,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1991041853}
   commandList:
-  - {fileID: 1991041865}
-  - {fileID: 1991041864}
   - {fileID: 1991041862}
   suppressAllAutoSelections: 0
 --- !u!114 &1991041853
@@ -1578,7 +1619,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 137.92705
     y: 741.2196
-    width: 94.545425
+    width: 94.84846
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1693,46 +1734,6 @@ MonoBehaviour:
   scope: 2
   key: "\u4F20\u9001\u70B9\u83B7\u53D6"
   value: {x: 0, y: 0, z: 0}
---- !u!114 &1991041864
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1991041822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fb064de1b711a449845627f19b7f7b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 85
-  indentLevel: 0
-  getOrSet: 1
-  property: 11
-  transformData:
-    transformRef: {fileID: 1991041866}
-    transformVal: {fileID: 0}
-  inOutVar: {fileID: 1991041863}
---- !u!114 &1991041865
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1991041822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fb064de1b711a449845627f19b7f7b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 84
-  indentLevel: 0
-  getOrSet: 0
-  property: 11
-  transformData:
-    transformRef: {fileID: 1991041867}
-    transformVal: {fileID: 610418221}
-  inOutVar: {fileID: 1991041863}
 --- !u!114 &1991041866
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1950,3 +1951,4 @@ SceneRoots:
   - {fileID: 1026095708}
   - {fileID: 1099399248}
   - {fileID: 1621043782}
+  - {fileID: 1811133408}
