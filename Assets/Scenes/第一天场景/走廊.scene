@@ -188,6 +188,7 @@ GameObject:
   - component: {fileID: 86450095}
   - component: {fileID: 86450094}
   - component: {fileID: 86450093}
+  - component: {fileID: 86450100}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Flowchart
@@ -222,8 +223,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 86450077}
-  selectedCommands:
-  - {fileID: 86450075}
+  selectedCommands: []
   variables:
   - {fileID: 86450042}
   - {fileID: 86450089}
@@ -1620,7 +1620,7 @@ MonoBehaviour:
   itemId: 53
   blockName: "\u6D88\u9664\u9ED1\u5E55"
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 86450100}
   commandList:
   - {fileID: 86450075}
   - {fileID: 86450070}
@@ -3090,6 +3090,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 86450092}
+  suppressBlockAutoSelect: 0
+  waitForFrames: 1
+--- !u!114 &86450100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86450014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 86450077}
   suppressBlockAutoSelect: 0
   waitForFrames: 1
 --- !u!1001 &173571783
