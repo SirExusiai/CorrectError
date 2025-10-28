@@ -69,6 +69,9 @@ namespace Fungus
         [Tooltip("The character UI object")]
         [SerializeField] protected Image characterImage;
         public virtual Image CharacterImage { get { return characterImage; } }
+        
+        [Tooltip("The main dialog panel background image, which will be hidden when no character is speaking.")]
+        [SerializeField] protected Image panelImage;
     
         [Tooltip("Adjust width of story text when Character Image is displayed (to avoid overlapping)")]
         [SerializeField] protected bool fitTextWithImage = true;
@@ -389,6 +392,19 @@ namespace Fungus
         /// </summary>
         public virtual void SetCharacterImage(Sprite image)
         {
+            // --- 在这里添加代码 ---
+            if (panelImage != null)
+            {
+                // 如果有头像 (image != null)，则启用 panelImage
+                // 如果没有头像 (image == null)，则禁用 panelImage
+                panelImage.enabled = (image != null);
+            }
+            // --- 添加结束 ---
+
+            if (characterImage == null)
+            {
+                return;
+            }
             if (characterImage == null)
             {
                 return;
