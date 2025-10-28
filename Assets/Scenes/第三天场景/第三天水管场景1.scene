@@ -2030,9 +2030,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2138045779}
+  - {fileID: 2138045795}
   selectedCommands:
-  - {fileID: 2138045802}
+  - {fileID: 2138045799}
   variables:
   - {fileID: 2138045782}
   description: 
@@ -2088,7 +2088,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67.66667
     y: 70.66669
-    width: 120.61856
+    width: 119.41581
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2130,7 +2130,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 81
     y: 18.146038
-    width: 97.42268
+    width: 96.7354
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2223,7 +2223,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 85.69417
     y: 120.72015
-    width: 97.42268
+    width: 96.7354
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2289,7 +2289,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 254.8245
     y: -34.12716
-    width: 97.42268
+    width: 96.7354
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2374,7 +2374,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 147.9499
     y: -31.24432
-    width: 97.42268
+    width: 96.7354
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2841,7 +2841,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 277.8468
     y: 78.72131
-    width: 97.42268
+    width: 96.7354
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2881,7 +2881,7 @@ MonoBehaviour:
       typeFullname: System.Single
       intValue: 0
       boolValue: 0
-      floatValue: 2
+      floatValue: 4
       stringValue: 
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
@@ -2898,7 +2898,7 @@ MonoBehaviour:
       typeFullname: System.Single
       intValue: 0
       boolValue: 0
-      floatValue: 0.2
+      floatValue: 0.5
       stringValue: 
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}

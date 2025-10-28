@@ -1931,7 +1931,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u7B2C2\u5929"
+  m_text: "\u7B2C5\u5929"
   m_enableAdvanceTextProcess: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f3e63adf26948e5429748eadc5d8a725, type: 2}
@@ -2491,8 +2491,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 2145019793}
-  selectedCommands:
-  - {fileID: 2145019806}
+  selectedCommands: []
   variables:
   - {fileID: 2145019767}
   - {fileID: 2145019766}
