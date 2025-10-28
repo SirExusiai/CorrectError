@@ -557,6 +557,9 @@ GameObject:
   - component: {fileID: 598426514}
   - component: {fileID: 598426516}
   - component: {fileID: 598426515}
+  - component: {fileID: 598426519}
+  - component: {fileID: 598426518}
+  - component: {fileID: 598426517}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Flowchart
@@ -591,8 +594,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 598426508}
-  selectedCommands:
-  - {fileID: 598426502}
+  selectedCommands: []
   variables:
   - {fileID: 598426494}
   - {fileID: 598426510}
@@ -1286,7 +1288,7 @@ MonoBehaviour:
     booleanVal: 0
 --- !u!114 &598426515
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1334,6 +1336,68 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &598426517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598426483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 598426519}
+  suppressBlockAutoSelect: 0
+  waitForFrames: 1
+--- !u!114 &598426518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598426483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 67
+  indentLevel: 0
+  duration: 1
+  targetAlpha: 0
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  fadeTweenType: 4
+--- !u!114 &598426519
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598426483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 66.66669
+    y: 273.3333
+    width: 113.33333
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 66
+  blockName: New Block
+  description: 
+  eventHandler: {fileID: 598426517}
+  commandList:
+  - {fileID: 598426518}
+  suppressAllAutoSelections: 0
 --- !u!1 &841073920
 GameObject:
   m_ObjectHideFlags: 0

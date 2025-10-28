@@ -1816,7 +1816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 2
   key: "DAY1\u5E8A\u5F00\u5173"
-  value: 0
+  value: 1
 --- !u!114 &1193034253
 MonoBehaviour:
   m_ObjectHideFlags: 2

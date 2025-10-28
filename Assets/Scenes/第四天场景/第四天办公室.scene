@@ -2598,7 +2598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 356.2741, y: -120.866875}
+  scrollPos: {x: 139.13118, y: -217.05734}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -6424,7 +6424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetFlowchart: {fileID: 1193034294}
-  targetBlockName: "DAY3\u4E0E\u955C\u5B50\u4EA4\u4E92"
+  targetBlockName: "DAY4\u4E0E\u955C\u5B50\u4EA4\u4E92"
   flagToSetOnInteract: 
 --- !u!114 &1975972728
 MonoBehaviour:
@@ -6953,6 +6953,14 @@ PrefabInstance:
     - target: {fileID: 82525415764933120, guid: 1a020dac1afa33544bc701a7ad37c1da, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415718220282807216, guid: 1a020dac1afa33544bc701a7ad37c1da, type: 3}
+      propertyPath: m_Size.y
+      value: 6.0736475
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415718220282807216, guid: 1a020dac1afa33544bc701a7ad37c1da, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.19965792
       objectReference: {fileID: 0}
     - target: {fileID: 7043705832420552480, guid: 1a020dac1afa33544bc701a7ad37c1da, type: 3}
       propertyPath: targetBlockName

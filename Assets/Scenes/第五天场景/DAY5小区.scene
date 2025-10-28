@@ -374,6 +374,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &514933238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 7
+  m_Component:
+  - component: {fileID: 514933239}
+  m_Layer: 0
+  m_HasEditorInfo: 1
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &514933239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514933238}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.199338, y: 9.671, z: -0.19374225}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &649152985
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,7 +988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542024871768552698, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
       propertyPath: targetBlockName
-      value: "DAY2\u5C0F\u533A\u4E0E023\u4EA4\u4E92"
+      value: "DAY5\u5C0F\u533A\u4E0E051\u4EA4\u4E92"
       objectReference: {fileID: 0}
     - target: {fileID: 3542024871768552698, guid: a10c94c04d8034e479bd157c3dfe6cc1, type: 3}
       propertyPath: targetFlowchart
@@ -1680,7 +1712,6 @@ GameObject:
   - component: {fileID: 2145019789}
   - component: {fileID: 2145019788}
   - component: {fileID: 2145019785}
-  - component: {fileID: 2145019784}
   - component: {fileID: 2145019783}
   - component: {fileID: 2145019782}
   - component: {fileID: 2145019781}
@@ -1714,6 +1745,7 @@ GameObject:
   - component: {fileID: 2145019816}
   - component: {fileID: 2145019817}
   - component: {fileID: 2145019815}
+  - component: {fileID: 2145019820}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Flowchart
@@ -1747,9 +1779,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2145019779}
+  - {fileID: 2145019793}
   selectedCommands:
-  - {fileID: 2145019777}
+  - {fileID: 2145019820}
   variables:
   - {fileID: 2145019766}
   - {fileID: 2145019765}
@@ -2867,25 +2899,6 @@ MonoBehaviour:
   - {fileID: 2145019781}
   - {fileID: 2145019780}
   suppressAllAutoSelections: 0
---- !u!114 &2145019784
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145019761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 77
-  indentLevel: 0
-  _sceneName:
-    stringRef: {fileID: 0}
-    stringVal: "051\u75C5\u623F \u3010\u4E34\u65F6\u6CBB\u7597\u3011"
-  loadingImage: {fileID: 0}
-  sceneNameOLD: 
 --- !u!114 &2145019785
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3055,8 +3068,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 142.81279
-    y: 1182.1312
+    x: 119.95566
+    y: 1017.3683
     width: 161.42853
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3083,7 +3096,7 @@ MonoBehaviour:
   - {fileID: 2145019807}
   - {fileID: 2145019806}
   - {fileID: 2145019785}
-  - {fileID: 2145019784}
+  - {fileID: 2145019820}
   suppressAllAutoSelections: 0
 --- !u!114 &2145019798
 MonoBehaviour:
@@ -3833,6 +3846,23 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 0
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &2145019820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145019761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 143
+  indentLevel: 0
+  targetObject: {fileID: 722933604}
+  methodName: TryTeleport
+  delay: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3855,3 +3885,4 @@ SceneRoots:
   - {fileID: 677277293}
   - {fileID: 239968756}
   - {fileID: 722933606}
+  - {fileID: 514933239}

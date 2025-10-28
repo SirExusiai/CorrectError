@@ -569,6 +569,7 @@ GameObject:
   - component: {fileID: 284527808}
   - component: {fileID: 284527807}
   - component: {fileID: 284527817}
+  - component: {fileID: 284527818}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Flowchart
@@ -619,6 +620,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 284527818}
   - {fileID: 284527759}
   suppressAllAutoSelections: 0
 --- !u!114 &284527761
@@ -646,9 +648,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 284527770}
+  - {fileID: 284527760}
   selectedCommands:
-  - {fileID: 284527817}
+  - {fileID: 284527818}
   variables:
   - {fileID: 284527784}
   - {fileID: 284527794}
@@ -3831,6 +3833,26 @@ MonoBehaviour:
   targetObject: {fileID: 94306507}
   methodName: TryTeleport
   delay: 0
+--- !u!114 &284527818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284527758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 130
+  indentLevel: 0
+  duration: 1
+  targetAlpha: 1
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  fadeTweenType: 4
 --- !u!1 &487674849
 GameObject:
   m_ObjectHideFlags: 1
@@ -4378,12 +4400,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 695541923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0f5697ede21247458e2f920ecac3610, type: 3}
+  m_Script: {fileID: 11500000, guid: d09b585c777741d4290b683722523cc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetFlowchart: {fileID: 284527761}
   targetBlockName: "DAY1\u4ECE\u8857\u9053\u5230\u8D70\u5ECA"
-  flagToSetOnInteract: 
+  triggerOnceGlobally: 0
+  triggerFlagName: 
 --- !u!1 &722482952
 GameObject:
   m_ObjectHideFlags: 0
@@ -4583,7 +4606,7 @@ Transform:
   m_GameObject: {fileID: 909414328}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.35, y: -1.21, z: 0}
+  m_LocalPosition: {x: -9.99, y: -1.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
