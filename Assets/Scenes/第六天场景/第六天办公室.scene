@@ -1326,6 +1326,7 @@ GameObject:
   - component: {fileID: 1193034370}
   - component: {fileID: 1193034369}
   - component: {fileID: 1193034376}
+  - component: {fileID: 1193034377}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Flowchart
@@ -1395,7 +1396,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 319.34384
     y: 388.81223
-    width: 97.25738
+    width: 96.874985
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1440,7 +1441,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 94.984375
     y: 574.7197
-    width: 163.92404
+    width: 164.06247
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1451,6 +1452,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1193034308}
   - {fileID: 1193034299}
+  - {fileID: 1193034377}
   - {fileID: 1193034303}
   - {fileID: 1193034268}
   - {fileID: 1193034307}
@@ -1982,7 +1984,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 272
     y: 483.2342
-    width: 109.07172
+    width: 108.593735
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2037,7 +2039,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 94.449814
     y: 533.1755
-    width: 109.07172
+    width: 108.593735
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2092,7 +2094,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 102.13723
     y: 477.51846
-    width: 140.29535
+    width: 140.62497
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2150,7 +2152,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 95
     y: 381.10126
-    width: 140.29535
+    width: 140.62497
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2204,7 +2206,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 96.26324
     y: 349
-    width: 128.481
+    width: 128.90622
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2273,7 +2275,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 92.58677
     y: 315.52042
-    width: 132.70041
+    width: 133.59372
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2334,7 +2336,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 445.7303
     y: 438.5483
-    width: 120.88606
+    width: 120.31248
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2361,7 +2363,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 548.58734
     y: 331.2942
-    width: 140.29535
+    width: 140.62497
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2386,11 +2388,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 41.160553, y: -186.33578}
+  scrollPos: {x: 119.28405, y: -135.74939}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.79000014
+  zoom: 0.6400002
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2398,9 +2400,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1193034265}
+  - {fileID: 1193034269}
   selectedCommands:
-  - {fileID: 1193034376}
+  - {fileID: 1193034299}
   variables:
   - {fileID: 1193034250}
   - {fileID: 1193034249}
@@ -3332,7 +3334,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 660.29205
     y: 419.1498
-    width: 152.10968
+    width: 152.34372
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3928,7 +3930,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1193034376
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3946,6 +3948,23 @@ MonoBehaviour:
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
   fadeTweenType: 4
+--- !u!114 &1193034377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193034248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 177
+  indentLevel: 1
+  soundClip: {fileID: 8300000, guid: 7c29e94d6a76b4e4fb6abdf2f2439b33, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!1 &1295047705
 GameObject:
   m_ObjectHideFlags: 0

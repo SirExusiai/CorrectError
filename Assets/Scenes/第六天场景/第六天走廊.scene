@@ -164,6 +164,9 @@ GameObject:
   - component: {fileID: 86450181}
   - component: {fileID: 86450182}
   - component: {fileID: 86450183}
+  - component: {fileID: 86450186}
+  - component: {fileID: 86450185}
+  - component: {fileID: 86450184}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Flowchart
@@ -197,9 +200,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 86450127}
+  - {fileID: 86450067}
   selectedCommands:
-  - {fileID: 86450183}
+  - {fileID: 86450068}
   variables:
   - {fileID: 86450090}
   - {fileID: 86450165}
@@ -261,8 +264,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 135.0262
-    y: 771.6378
-    width: 165.98169
+    y: 770.26794
+    width: 168.4931
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -272,6 +275,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 86450068}
+  - {fileID: 86450184}
   - {fileID: 86450069}
   - {fileID: 86450064}
   suppressAllAutoSelections: 0
@@ -380,7 +384,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 530.38257
     y: 864.1162
-    width: 97.48857
+    width: 99.31505
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -496,7 +500,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 450.99243
     y: 716.0332
-    width: 154.10956
+    width: 156.16434
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -529,7 +533,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 653.45593
     y: 714.5958
-    width: 85.616425
+    width: 86.98629
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -539,6 +543,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 86450181}
+  - {fileID: 86450186}
   - {fileID: 86450183}
   suppressAllAutoSelections: 0
 --- !u!114 &86450155
@@ -557,7 +562,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 247.18254
     y: 931.8985
-    width: 158.67575
+    width: 160.95886
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -567,6 +572,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 86450168}
+  - {fileID: 86450185}
   - {fileID: 86450167}
   - {fileID: 86450166}
   suppressAllAutoSelections: 0
@@ -1471,7 +1477,7 @@ MonoBehaviour:
   fadeTweenType: 4
 --- !u!114 &86450182
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1488,7 +1494,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &86450183
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1503,6 +1509,57 @@ MonoBehaviour:
   targetObject: {fileID: 1682919645}
   methodName: TryTeleport
   delay: 0
+--- !u!114 &86450184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86450014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 199
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 7c29e94d6a76b4e4fb6abdf2f2439b33, type: 3}
+  volume: 1
+  waitUntilFinished: 0
+--- !u!114 &86450185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86450014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 198
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 7c29e94d6a76b4e4fb6abdf2f2439b33, type: 3}
+  volume: 1
+  waitUntilFinished: 0
+--- !u!114 &86450186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86450014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 197
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 7c29e94d6a76b4e4fb6abdf2f2439b33, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!1001 &173571783
 PrefabInstance:
   m_ObjectHideFlags: 0

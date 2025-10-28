@@ -3117,11 +3117,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -69.91756, y: -893.4202}
+  scrollPos: {x: 209.49243, y: -687.0018}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 345.5
-  zoom: 0.6700003
+  zoom: 0.40000045
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -3130,8 +3130,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 2145019879}
-  selectedCommands:
-  - {fileID: 2145019919}
+  selectedCommands: []
   variables:
   - {fileID: 2145019766}
   - {fileID: 2145019765}
@@ -3278,7 +3277,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 359.82596
     y: 966.4352
-    width: 97.76117
+    width: 99.99994
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3323,7 +3322,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 129.47946
     y: 889.3098
-    width: 145.52234
+    width: 149.99988
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3386,7 +3385,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 135.52829
     y: 989.3746
-    width: 133.58205
+    width: 137.49991
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3413,7 +3412,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 124.687485
     y: 938.958
-    width: 145.52234
+    width: 149.99988
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3457,7 +3456,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 557.7937
     y: 1135.4027
-    width: 96.76614
+    width: 97.49995
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3599,7 +3598,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 157.38084
     y: 1082.4021
-    width: 94.7761
+    width: 97.49995
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3626,7 +3625,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 154.83612
     y: 1035.1776
-    width: 93.781075
+    width: 96.24995
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3852,7 +3851,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 146.87564
     y: 1219.2913
-    width: 111.69151
+    width: 114.99992
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3936,7 +3935,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 148.78043
     y: 1176.4352
-    width: 111.69151
+    width: 114.99992
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3966,7 +3965,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 535.5895
     y: 1267.5494
-    width: 97.76117
+    width: 99.99994
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4148,7 +4147,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 689.81793
     y: 1163.0725
-    width: 117.66166
+    width: 118.74992
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4177,7 +4176,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 702.7537
     y: 1095.4115
-    width: 118.656685
+    width: 118.74992
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4514,7 +4513,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 307.8278
     y: 1205.0051
-    width: 118.656685
+    width: 118.74992
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4543,7 +4542,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 324.9707
     y: 1149.7672
-    width: 117.66166
+    width: 118.74992
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4855,7 +4854,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 284.0185
     y: 1334.5297
-    width: 116.66663
+    width: 117.49992
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4884,7 +4883,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 121.161194
     y: 1334.5305
-    width: 110.69649
+    width: 111.24993
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4967,7 +4966,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &2145019919
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

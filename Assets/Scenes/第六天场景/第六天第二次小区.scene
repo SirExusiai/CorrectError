@@ -2993,8 +2993,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 2145019836}
-  selectedCommands:
-  - {fileID: 2145019837}
+  selectedCommands: []
   variables:
   - {fileID: 2145019766}
   - {fileID: 2145019765}
@@ -3138,7 +3137,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 167.42612
     y: 1040.0731
-    width: 99.99997
+    width: 96.87497
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3166,7 +3165,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 106.35447
     y: 1110.2579
-    width: 169.7916
+    width: 162.49994
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3235,8 +3234,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 148.22946
-    y: 941.3933
-    width: 149.99994
+    y: 942.9558
+    width: 143.74994
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3380,7 +3379,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 300.31064
     y: 1167.2264
-    width: 99.99997
+    width: 96.87497
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3899,7 +3898,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 139.8942
     y: 1188.0596
-    width: 99.99997
+    width: 96.87497
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4112,7 +4111,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &2145019872
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4157,7 +4156,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2145019873
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

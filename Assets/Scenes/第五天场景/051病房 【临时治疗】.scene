@@ -1459,9 +1459,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1991041858}
-  selectedCommands:
-  - {fileID: 1991041860}
+  - {fileID: 1991041834}
+  selectedCommands: []
   variables:
   - {fileID: 1991041829}
   - {fileID: 1991041854}
@@ -1496,7 +1495,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 136.29764
     y: 804.994
-    width: 122.72723
+    width: 120.90904
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1554,7 +1553,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 138.21413
     y: 857.99164
-    width: 134.84843
+    width: 132.72722
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1581,7 +1580,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 146.22504
     y: 657.5451
-    width: 98.48482
+    width: 97.27269
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1665,7 +1664,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 137.92705
     y: 741.2196
-    width: 94.84846
+    width: 94.545425
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1859,7 +1858,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &1991041871
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1886,7 +1885,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1991041872
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

@@ -1478,9 +1478,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1991041852}
-  selectedCommands:
-  - {fileID: 1991041869}
+  - {fileID: 1991041834}
+  selectedCommands: []
   variables:
   - {fileID: 1991041829}
   - {fileID: 1991041854}
@@ -1513,7 +1512,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 134.47946
     y: 804.994
-    width: 121.23286
+    width: 123.97258
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1571,7 +1570,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 137.30504
     y: 859.8098
-    width: 133.10501
+    width: 136.30135
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1598,7 +1597,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 141.1525
     y: 655.1208
-    width: 97.48857
+    width: 99.315056
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1737,7 +1736,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 140.24376
     y: 739.4014
-    width: 94.74885
+    width: 95.890396
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1901,7 +1900,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &1991041869
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

@@ -2294,6 +2294,7 @@ GameObject:
   - component: {fileID: 2145019817}
   - component: {fileID: 2145019816}
   - component: {fileID: 2145019822}
+  - component: {fileID: 2145019823}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Flowchart
@@ -2315,11 +2316,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 173.42986, y: -907.59076}
+  scrollPos: {x: 375.19568, y: -795.091}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 345.5
-  zoom: 0.6400004
+  zoom: 0.46000051
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2327,9 +2328,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2145019793}
+  - {fileID: 2145019799}
   selectedCommands:
-  - {fileID: 2145019822}
+  - {fileID: 2145019802}
   variables:
   - {fileID: 2145019767}
   - {fileID: 2145019766}
@@ -2464,7 +2465,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 135.97946
     y: 935.0598
-    width: 143.74994
+    width: 140.21729
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3362,7 +3363,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 717.84753
     y: 1228.0884
-    width: 99.99997
+    width: 97.826035
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3445,7 +3446,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 554.22003
     y: 1068.1125
-    width: 99.99997
+    width: 97.826035
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3720,7 +3721,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 161.56282
     y: 1110.6456
-    width: 137.49994
+    width: 133.69556
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3791,7 +3792,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 156.97946
     y: 991.8455
-    width: 144.7916
+    width: 140.21729
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3835,7 +3836,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 129.47946
     y: 889.3098
-    width: 149.99994
+    width: 145.65207
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3845,6 +3846,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 2145019802}
+  - {fileID: 2145019823}
   - {fileID: 2145019798}
   suppressAllAutoSelections: 0
 --- !u!4 &2145019800
@@ -4235,7 +4237,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2145019816
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4249,7 +4251,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &2145019817
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4270,7 +4272,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &2145019818
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4291,7 +4293,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &2145019819
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4312,7 +4314,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &2145019820
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4333,7 +4335,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &2145019821
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4606,7 +4608,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &2145019822
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4621,6 +4623,23 @@ MonoBehaviour:
   targetObject: {fileID: 607019645}
   methodName: TryTeleport
   delay: 0
+--- !u!114 &2145019823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145019761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 146
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 7c29e94d6a76b4e4fb6abdf2f2439b33, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

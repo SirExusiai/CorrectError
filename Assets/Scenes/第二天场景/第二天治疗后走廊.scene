@@ -176,6 +176,8 @@ GameObject:
   - component: {fileID: 86450107}
   - component: {fileID: 86450114}
   - component: {fileID: 86450113}
+  - component: {fileID: 86450116}
+  - component: {fileID: 86450115}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Flowchart
@@ -197,11 +199,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 47.755005, y: -581.85803}
+  scrollPos: {x: 177.44946, y: -524.2364}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 380.5
-  zoom: 0.7900002
+  zoom: 0.6100004
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -209,7 +211,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 86450106}
+  - {fileID: 86450065}
   selectedCommands: []
   variables:
   - {fileID: 86450042}
@@ -300,7 +302,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 107.00098
     y: 606.9591
-    width: 178.48099
+    width: 181.14746
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -329,7 +331,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 108.61575
     y: 724.4046
-    width: 196.8354
+    width: 200.81958
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -393,7 +395,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 145.66699
     y: 855.71606
-    width: 162.0253
+    width: 164.75403
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -422,7 +424,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 141.76076
     y: 811.96606
-    width: 176.58224
+    width: 179.50812
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -432,6 +434,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 86450083}
+  - {fileID: 86450115}
   - {fileID: 86450080}
   - {fileID: 86450063}
   suppressAllAutoSelections: 0
@@ -451,7 +454,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 136.29202
     y: 772.9036
-    width: 166.45566
+    width: 168.85239
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -461,6 +464,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 86450068}
+  - {fileID: 86450116}
   - {fileID: 86450069}
   - {fileID: 86450064}
   suppressAllAutoSelections: 0
@@ -620,7 +624,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 369.6688
     y: 619.83044
-    width: 98.10126
+    width: 99.1803
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -772,7 +776,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 528.49207
     y: 807.6733
-    width: 98.10126
+    width: 99.1803
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -951,7 +955,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 15.5361185
     y: 645.1492
-    width: 154.43036
+    width: 156.55731
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2021,6 +2025,40 @@ MonoBehaviour:
   targetObject: {fileID: 1332281170}
   methodName: ChangeToPersistent
   delay: 0
+--- !u!114 &86450115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86450014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 134
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 7c29e94d6a76b4e4fb6abdf2f2439b33, type: 3}
+  volume: 1
+  waitUntilFinished: 0
+--- !u!114 &86450116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86450014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 133
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 7c29e94d6a76b4e4fb6abdf2f2439b33, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!1001 &173571783
 PrefabInstance:
   m_ObjectHideFlags: 0
