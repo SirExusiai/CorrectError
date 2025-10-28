@@ -1056,7 +1056,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 2007925257}
   selectedCommands:
-  - {fileID: 2007925271}
+  - {fileID: 2007925265}
   variables:
   - {fileID: 2007925255}
   description: 
@@ -2567,7 +2567,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &2007925271
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2586,7 +2586,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &2007925272
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
