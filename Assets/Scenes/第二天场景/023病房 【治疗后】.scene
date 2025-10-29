@@ -2295,7 +2295,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1991041834}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1991041881}
   variables:
   - {fileID: 1991041829}
   - {fileID: 1991041854}
@@ -5517,7 +5518,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1991041892
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

@@ -2286,6 +2286,7 @@ GameObject:
   - component: {fileID: 1762197423}
   - component: {fileID: 1762197424}
   - component: {fileID: 1762197425}
+  - component: {fileID: 1762197426}
   m_Layer: 0
   m_HasEditorInfo: 1
   m_Name: Flowchart
@@ -2307,10 +2308,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 531.7702, y: -207.49455}
+  scrollPos: {x: 31.770386, y: -429.36908}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 402.5
+  blockViewHeight: 406
   zoom: 0.6400002
   scrollViewRect:
     serializedVersion: 2
@@ -2319,9 +2320,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1762197397}
+  - {fileID: 1762197392}
   selectedCommands:
-  - {fileID: 1762197399}
+  - {fileID: 1762197424}
   variables:
   - {fileID: 1762197361}
   - {fileID: 1762197400}
@@ -2329,6 +2330,7 @@ MonoBehaviour:
   - {fileID: 1762197413}
   - {fileID: 1762197412}
   - {fileID: 1762197414}
+  - {fileID: 1762197426}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -3096,8 +3098,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 126.97946
-    y: 802.5598
+    x: 125.93779
+    y: 803.6015
     width: 171.87495
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6268,7 +6270,7 @@ MonoBehaviour:
   targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &1762197425
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6283,6 +6285,21 @@ MonoBehaviour:
   soundClip: {fileID: 8300000, guid: 7c29e94d6a76b4e4fb6abdf2f2439b33, type: 3}
   volume: 1
   waitUntilFinished: 0
+--- !u!114 &1762197426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762197356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: Var
+  value: 0
 --- !u!1001 &1922067675
 PrefabInstance:
   m_ObjectHideFlags: 0
